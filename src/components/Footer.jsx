@@ -15,8 +15,8 @@ export default function Footer() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: { xs: 4, sm: 8 },
-        py: { xs: 8, sm: 10 },
+        // gap: { xs: 4, sm: 8 },
+        py: { xs: 1, sm: 2 },
         textAlign: { sm: 'center', md: 'left' },
       }}
     >
@@ -24,7 +24,6 @@ export default function Footer() {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          pt: { xs: 4, sm: 8 },
           width: '100%',
         }}
       >
