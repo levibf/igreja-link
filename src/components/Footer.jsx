@@ -74,6 +74,10 @@ export default function Footer() {
           </IconButton>
         </Stack>
       </Box>
+        <Stack>
+          ASSEMBLEIA DE DEUS MINISTÉRIO MONTESE
+          RUA 15 DE NOVEMBRO, 957 - MONTESE - FORTALEZA/CE
+        </Stack>
     </Container>
   );
 }
