@@ -74,10 +74,10 @@ export default function Footer() {
           </IconButton>
         </Stack>
       </Box>
-        <Stack>
-          ASSEMBLEIA DE DEUS MINISTÉRIO MONTESE
-          RUA 15 DE NOVEMBRO, 957 - MONTESE - FORTALEZA/CE
-        </Stack>
+      <Stack>
+        <a target='_blank' href="https://www.google.com/maps/place/Igreja+Evang%C3%A9lica+Assembl%C3%A9ia+de+Deus+-+Montese/@-3.7703292,-38.5544027,1125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x7c74eb696052b7b:0x8d55237fcf693e58!8m2!3d-3.7703292!4d-38.5518278!16s%2Fg%2F1t_hz642?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">ASSEMBLEIA DE DEUS MINISTÉRIO MONTESE
+          RUA 15 DE NOVEMBRO, 957 - MONTESE - FORTALEZA/CE</a>
+      </Stack>
     </Container>
   );
 }

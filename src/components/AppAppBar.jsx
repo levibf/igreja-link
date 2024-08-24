@@ -11,15 +11,13 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
-import TextField from '@mui/material/TextField';
-import { useSearch } from './SearchContext'; // Importa o hook do contexto
 import { IconButton } from '@mui/material';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
+import SearchBar from './Search/SearchBar';
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
-  const { searchText, setSearchText } = useSearch(); // Usa o contexto para acesso e atualização
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -92,23 +90,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 px: 0,
               }}
             >
-              <Box sx={{ display: { xs: 'none', md: 'flex' } }} >
-                <TextField
-                  sx={{ width: "900px" }}
-                  id="search"
-                  hiddenLabel
-                  size="small"
-                  variant="outlined"
-                  aria-label="Pesquisar..."
-                placeholder="Pesquisar..."
-                  value={searchText}
-                  onChange={(e) => setSearchText(e.target.value)} // Atualiza o contexto
-                  inputProps={{
-                    autoComplete: 'off',
-                    'aria-label': 'Pesquisar...',
-                  }}
-                />
-              </Box>
+              <SearchBar /> {/* Campo de busca com resultados */}
             </Box>
             <Box
               sx={{
@@ -192,7 +174,7 @@ function AppAppBar({ mode, toggleColorMode }) {
           </Toolbar>
         </Container>
       </AppBar>
-    </div >
+    </div>
   );
 }
 
