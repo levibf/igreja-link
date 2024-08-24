@@ -100,7 +100,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   size="small"
                   variant="outlined"
                   aria-label="Pesquisar..."
-                  placeholder="Pesquisar..."
+                placeholder="Pesquisar..."
                   value={searchText}
                   onChange={(e) => setSearchText(e.target.value)} // Atualiza o contexto
                   inputProps={{

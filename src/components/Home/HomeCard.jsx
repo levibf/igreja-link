@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Box, Typography, Button, Container } from '@mui/material';
 
 export default function HomeCard() {
@@ -58,7 +59,10 @@ export default function HomeCard() {
                         justifyContent: 'center',
                     }}
                 >
+
                     <Button
+                        component={Link}
+                        to="/regionais"
                         variant="contained"
                         sx={{
                             backgroundColor: '#8A2B2B',
