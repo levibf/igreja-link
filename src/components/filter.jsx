@@ -1,85 +1,30 @@
-import React from "react";
-import Cores from "../getLPTheme";
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-// opções de categorias dos filtros
-function EscolhaOption({ escolher, inputType }) {
-  let Opcoes = [];
+function Example() {
+  const [show, setShow] = useState(false);
 
-  if (escolher === "marca") {
-    Opcoes = [
-      { texto: "Adiddas" },
-      { texto: "Calenciada" },
-      { texto: "K-Swiss" },
-      { texto: "Nike" },
-      { texto: "Puma" },
-    ];
-  } else if (escolher === "categoria") {
-    Opcoes = [
-      { texto: "Esporte e lazer" },
-      { texto: "Casual" },
-      { texto: "Utilitário" },
-      { texto: "Corrida" },
-    ];
-  } else if (escolher === "gênero") {
-    Opcoes = [
-      { texto: "Masculino" },
-      { texto: "Feminino" },
-      { texto: "Unisex" },
-    ];
-  } else if (escolher === "estado") {
-    Opcoes = [
-      { texto: "Novo" },
-      { texto: "Usado" },
-    ];
-  }
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
-      {Opcoes.map((opcao, index) => (
-        <div
-          key={index}
-          style={{
-            color: "black",
-            fontSize: "14px",
-            fontWeight: 500,
-            width: "auto",
-            marginTop: "10px",
-            display: "flex",
-            gap: "20px",
-          }}
-        >
-          <input
-            className="inputFiltro"
-            type={inputType}
-            name={`Type${inputType}`}
-            id={`${escolher}-${index}`}
-            value={opcao.texto}
-            style={{
-              width: "22px",
-              height: "22px",
-            }}
-          />
-          <label htmlFor={`${escolher}-${index}`}>{opcao.texto}</label>
-        </div>
-      ))}
+      <Button variant="primary" onClick={handleShow}>
+        Filtro
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 }
 
-export default function FilterGroup({ title, inputType, option }) {
-  return (
-    <>
-      <div
-        style={{
-          color: "black",
-          fontSize: "14px",
-          fontWeight: 700,
-          marginTop: "20px",
-        }}
-      >
-        {title}
-      </div>
-      <EscolhaOption escolher={option} inputType={inputType} />
-    </>
-  );
-}
+export default Example;

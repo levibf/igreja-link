@@ -13,7 +13,8 @@ import AppAppBar from './components/AppAppBar';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
-import FilterGroup from './components/filter';
+// import FilterGroup from './components/filter';
+import Example from './components/filter';
 
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
@@ -76,7 +77,19 @@ export default function LandingPage() {
         <Box sx={{ bgcolor: 'background.default' }}>
           <Features />
           <Divider />
-          <FilterGroup />
+          <Example />
+          {/* <div id="campoFiltragem">
+
+<div>
+    <p id='tituloFiltro'>Filtrar por</p>
+    <hr id='linhaFiltro' />
+</div>
+
+<FilterGroup title='Marca' inputType='checkbox' option='marca' />
+<FilterGroup title='Categoria' inputType='checkbox' option='categoria' />
+<FilterGroup title='Regionais' inputType='checkbox' option='Regionais' />
+<FilterGroup title='Estado' inputType='radio' option='estado' />
+</div> */}
           <Footer />
         </Box>
       </ThemeProvider>
