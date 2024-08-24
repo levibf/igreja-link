@@ -18,45 +18,49 @@ function Features() {
   );
 
   return (
-    <Router>
-      <Container sx={{ marginBottom: 10 }}>
-        {/* Espaço para compensar a altura da AppBar */}
-        <Box sx={{ height: 80 }} />
+    <>
+      <h1>teste</h1>
+      <h1>teste</h1>
+    </>
+    // <Router>
+    //   <Container sx={{ marginBottom: 10 }}>
+    //     {/* Espaço para compensar a altura da AppBar */}
+    //     <Box sx={{ height: 80 }} />
 
-        <Typography variant="h4" gutterBottom>
-          Regionais
-        </Typography>
-        <Grid container spacing={4}>
-          {filteredRegionals.map((regional, index) => (
-            <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card>
-                <Box sx={{ p: 2 }}>
-                  <Typography variant="h6" component="h2">
-                    {regional.titulo}
-                  </Typography>
-                  <Link to={`/regionais/${regional.id}`}>
-                    <Typography variant="body2">
-                      Acessar {regional.titulo}
-                    </Typography>
-                  </Link>
-                </Box>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
+    //     <Typography variant="h4" gutterBottom>
+    //       Regionais
+    //     </Typography>
+    //     <Grid container spacing={4}>
+    //       {filteredRegionals.map((regional, index) => (
+    //         <Grid item key={index} xs={12} sm={6} md={4}>
+    //           <Card>
+    //             <Box sx={{ p: 2 }}>
+    //               <Typography variant="h6" component="h2">
+    //                 {regional.titulo}
+    //               </Typography>
+    //               <Link to={`/regionais/${regional.id}`}>
+    //                 <Typography variant="body2">
+    //                   Acessar {regional.titulo}
+    //                 </Typography>
+    //               </Link>
+    //             </Box>
+    //           </Card>
+    //         </Grid>
+    //       ))}
+    //     </Grid>
 
-        {/* Configuração das rotas */}
-        <Routes>
-          {regionals.map((regional) => (
-            <Route
-              key={regional.id}
-              path={`/regionais/${regional.id}`}
-              element={<RegionalPage regional={regional} />}
-            />
-          ))}
-        </Routes>
-      </Container>
-    </Router>
+    //     {/* Configuração das rotas */}
+    //     <Routes>
+    //       {regionals.map((regional) => (
+    //         <Route
+    //           key={regional.id}
+    //           path={`/regionais/${regional.id}`}
+    //           element={<RegionalPage regional={regional} />}
+    //         />
+    //       ))}
+    //     </Routes>
+    //   </Container>
+    // </Router>
   );
 }
 

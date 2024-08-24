@@ -13,6 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
 import TextField from '@mui/material/TextField';
 import { useSearch } from './SearchContext'; // Importa o hook do contexto
+import { IconButton } from '@mui/material';
+import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
@@ -70,6 +73,15 @@ function AppAppBar({ mode, toggleColorMode }) {
                   : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
+            <Link to='/'>
+              <IconButton
+                aria-label="Home"
+                sx={{ alignSelf: 'center' }}
+                title='Home'
+              >
+                <img src={logo} alt="admontese" width={35} />
+              </IconButton>
+            </Link>
             <Box
               sx={{
                 flexGrow: 1,
