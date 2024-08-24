@@ -71,13 +71,27 @@ function AppAppBar({ mode, toggleColorMode }) {
                   : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
-            <Link to='/'>
+            <Link to='/' style={{ paddingRight: '28px' }}>
               <IconButton
                 aria-label="Home"
                 sx={{ alignSelf: 'center' }}
                 title='Home'
               >
-                <img src={logo} alt="admontese" width={35} />
+                <Box
+                  component="img"
+                  src={logo}
+                  alt="admontese"
+                  sx={{
+                    width: {
+                      xs: 25, // Altura para telas pequenas (celular)
+                      md: 35, // Altura para telas médias e grandes (PC)
+                    },
+                    height: {
+                      xs: 20, // Altura para telas pequenas (celular)
+                      md: 35, // Altura para telas médias e grandes (PC)
+                    },
+                  }}
+                />
               </IconButton>
             </Link>
             <Box
@@ -101,7 +115,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
             </Box>
-            <Box sx={{ display: { sm: '', md: 'none' } }}>
+            {/* <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
                 variant="text"
                 color="primary"
@@ -170,7 +184,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </MenuItem>
                 </Box>
               </Drawer>
-            </Box>
+            </Box> */}
           </Toolbar>
         </Container>
       </AppBar>

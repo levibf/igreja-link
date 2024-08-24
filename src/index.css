@@ -4,3 +4,7 @@
     background-size: cover;
     min-height: 100vh;
 }
+
+.css-br6p1z-MuiButtonBase-root-MuiIconButton-root {
+    padding: 0px !important;
+}

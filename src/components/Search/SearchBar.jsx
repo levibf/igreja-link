@@ -20,7 +20,19 @@ export default function SearchBar() {
   };
 
   return (
-    <Stack sx={{ width: 900 }}>
+    <Stack
+      sx={{
+        width: {
+          xs: '100%', // Ocupa toda a largura em dispositivos móveis
+          sm: 500, // Largura média em tablets
+          md: 700, // Largura em telas médias
+          lg: 900, // Largura em desktops
+        },
+        mx: 'auto', // Centraliza horizontalmente
+        // mt: 2, // Margem superior
+        // px: 2, // Padding horizontal
+      }}
+    >
       <Autocomplete
         freeSolo
         id="search-bar"
