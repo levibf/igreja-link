@@ -79,6 +79,8 @@ export default function HomeCard() {
                         REGIONAIS
                     </Button>
                     <Button
+                        component={Link}
+                        to="/setores"
                         variant="contained"
                         sx={{
                             backgroundColor: '#8A2B2B',
