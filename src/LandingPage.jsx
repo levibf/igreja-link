@@ -13,6 +13,7 @@ import AppAppBar from './components/AppAppBar';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
+import FilterGroup from './components/filter';
 
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
@@ -75,6 +76,7 @@ export default function LandingPage() {
         <Box sx={{ bgcolor: 'background.default' }}>
           <Features />
           <Divider />
+          <FilterGroup />
           <Footer />
         </Box>
       </ThemeProvider>
