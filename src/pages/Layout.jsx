@@ -7,16 +7,13 @@ import { SearchProvider } from '../components/SearchContext';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from '../components/AppAppBar';
-import Features from '../components/Features';
 import Footer from '../components/Footer';
 import getLPTheme from '../getLPTheme';
-import FilterGroup from '../components/filter';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
     return (
