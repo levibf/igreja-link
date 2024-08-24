@@ -25,8 +25,10 @@ export default function SearchBar() {
         freeSolo
         id="search-bar"
         disableClearable
-        options={regionais.map((option) => option.titulo)}
         onInputChange={handleInputChange} // Captura a seleção do usuário
+        options={regionais}
+        groupBy={(option) => option.grupo}  // Agrupando por grupo
+        getOptionLabel={(option) => option.titulo}  // Exibindo o título
         renderInput={(params) => (
           <TextField
             {...params}

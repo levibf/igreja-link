@@ -17,7 +17,8 @@ const regionals = [
                 titulo: "Relatório Patrimonial",
                 link: "regionais/r01/patrimonio"
             }
-        ]
+        ],
+        grupo: 'Regional',
     },
     {
         id: "r02",
