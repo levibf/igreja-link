@@ -1,7 +1,7 @@
 const setores = [
   {
     id: "s01",
-    titulo: "Setor 01 - Administração",
+    titulo: "Setor 01 - Sede Estadual",
     link: "/admontese.com/admontesegestao/s01",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -21,7 +21,7 @@ const setores = [
   },
   {
     id: "s02",
-    titulo: "Setor 02 - Financeiro",
+    titulo: "Setor 02 - Conjunto Araturi",
     link: "/admontese.com/admontesegestao/s02",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -41,7 +41,7 @@ const setores = [
   },
   {
     id: "s03",
-    titulo: "Setor 03 - Recursos Humanos",
+    titulo: "Setor 03 - Conjunto Jereissati",
     link: "/admontese.com/admontesegestao/s03",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -61,7 +61,7 @@ const setores = [
   },
   {
     id: "s04",
-    titulo: "Setor 04 - Tecnologia da Informação",
+    titulo: "Setor 04 - Conjunto Ceará",
     link: "/admontese.com/admontesegestao/s04",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -81,7 +81,7 @@ const setores = [
   },
   {
     id: "s05",
-    titulo: "Setor 05 - Marketing",
+    titulo: "Setor 05 - Pajuçara",
     link: "/admontese.com/admontesegestao/s05",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -101,7 +101,7 @@ const setores = [
   },
   {
     id: "s06",
-    titulo: "Setor 06 - Logística",
+    titulo: "Setor 06 - Barra do Ceará",
     link: "/admontese.com/admontesegestao/s06",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -121,7 +121,7 @@ const setores = [
   },
   {
     id: "s07",
-    titulo: "Setor 07 - Produção",
+    titulo: "Setor 07 - Cidade dos Funcionários",
     link: "/admontese.com/admontesegestao/s07",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -141,7 +141,7 @@ const setores = [
   },
   {
     id: "s08",
-    titulo: "Setor 08 - Pesquisa e Desenvolvimento",
+    titulo: "Setor 08 - Serrinha",
     link: "/admontese.com/admontesegestao/s08",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -161,7 +161,7 @@ const setores = [
   },
   {
     id: "s09",
-    titulo: "Setor 09 - Jurídico",
+    titulo: "Setor 09 - Conjunto Acaracunzinho",
     link: "/admontese.com/admontesegestao/s09",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -181,7 +181,7 @@ const setores = [
   },
   {
     id: "s10",
-    titulo: "Setor 10 - Vendas",
+    titulo: "Setor 10 - Raul Barbosa",
     link: "/admontese.com/admontesegestao/s10",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -201,7 +201,7 @@ const setores = [
   },
   {
     id: "s11",
-    titulo: "Setor 11 - Compras",
+    titulo: "Setor 11 - Sítio Bom Futuro",
     link: "/admontese.com/admontesegestao/s11",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -221,7 +221,7 @@ const setores = [
   },
   {
     id: "s12",
-    titulo: "Setor 12 - Suporte ao Cliente",
+    titulo: "Setor 12 - Conjunto Esperança",
     link: "/admontese.com/admontesegestao/s12",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -241,7 +241,7 @@ const setores = [
   },
   {
     id: "s13",
-    titulo: "Setor 13 - Desenvolvimento de Produto",
+    titulo: "Setor 13 - Parque Albane",
     link: "/admontese.com/admontesegestao/s13",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -261,7 +261,7 @@ const setores = [
   },
   {
     id: "s14",
-    titulo: "Setor 14 - Pesquisa de Mercado",
+    titulo: "Setor 14 - Pacatuba",
     link: "/admontese.com/admontesegestao/s14",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -281,7 +281,7 @@ const setores = [
   },
   {
     id: "s15",
-    titulo: "Setor 15 - Engenharia",
+    titulo: "Setor 15 - Tabuba",
     link: "/admontese.com/admontesegestao/s15",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -301,7 +301,7 @@ const setores = [
   },
   {
     id: "s16",
-    titulo: "Setor 16 - Treinamento",
+    titulo: "Setor 16 - Jardim Iracema",
     link: "/admontese.com/admontesegestao/s16",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -321,7 +321,7 @@ const setores = [
   },
   {
     id: "s17",
-    titulo: "Setor 17 - Relações Públicas",
+    titulo: "Setor 17 - Siqueira",
     link: "/admontese.com/admontesegestao/s17",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -341,7 +341,7 @@ const setores = [
   },
   {
     id: "s18",
-    titulo: "Setor 18 - Expansão Internacional",
+    titulo: "Setor 18 - Cidade Oeste",
     link: "/admontese.com/admontesegestao/s18",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -361,7 +361,7 @@ const setores = [
   },
   {
     id: "s19",
-    titulo: "Setor 19 - Logística",
+    titulo: "Setor 19 - João XXIII",
     link: "/admontese.com/admontesegestao/s19",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -381,7 +381,7 @@ const setores = [
   },
   {
     id: "s20",
-    titulo: "Setor 20 - Tecnologia da Informação",
+    titulo: "Setor 20 - Mondubim",
     link: "/admontese.com/admontesegestao/s20",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -401,7 +401,7 @@ const setores = [
   },
   {
     id: "s21",
-    titulo: "Setor 21 - Manutenção",
+    titulo: "Setor 21 - Praia do Futuro",
     link: "/admontese.com/admontesegestao/s21",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -421,7 +421,7 @@ const setores = [
   },
   {
     id: "s22",
-    titulo: "Setor 22 - Compliance",
+    titulo: "Setor 22 - Têxtil",
     link: "/admontese.com/admontesegestao/s22",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -441,7 +441,7 @@ const setores = [
   },
   {
     id: "s23",
-    titulo: "Setor 23 - Gestão de Qualidade",
+    titulo: "Setor 23 - Aquiraz",
     link: "/admontese.com/admontesegestao/s23",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -461,7 +461,7 @@ const setores = [
   },
   {
     id: "s24",
-    titulo: "Setor 24 - Sustentabilidade",
+    titulo: "Setor 24 - Maranguape",
     link: "/admontese.com/admontesegestao/s24",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -481,7 +481,7 @@ const setores = [
   },
   {
     id: "s25",
-    titulo: "Setor 25 - Planejamento Estratégico",
+    titulo: "Setor 25 - Bom Sucesso",
     link: "/admontese.com/admontesegestao/s25",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -501,7 +501,7 @@ const setores = [
   },
   {
     id: "s26",
-    titulo: "Setor 26 - Saúde e Segurança",
+    titulo: "Setor 26 - Cascavel",
     link: "/admontese.com/admontesegestao/s26",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -521,7 +521,7 @@ const setores = [
   },
   {
     id: "s27",
-    titulo: "Setor 27 - Atendimento ao Cliente",
+    titulo: "Setor 27 - Barro Preto",
     link: "/admontese.com/admontesegestao/s27",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -541,7 +541,7 @@ const setores = [
   },
   {
     id: "s28",
-    titulo: "Setor 28 - Inovação",
+    titulo: "Setor 28 - Pavuna",
     link: "/admontese.com/admontesegestao/s28",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
@@ -561,7 +561,7 @@ const setores = [
   },
   {
     id: "s29",
-    titulo: "Setor 29 - Desenvolvimento Pessoal",
+    titulo: "Setor 29 - Paranguaba",
     link: "/admontese.com/admontesegestao/s29",
     imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
     opcoes: [
