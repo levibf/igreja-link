@@ -13,12 +13,12 @@ export default function SearchBar() {
   const [selectedValue, setSelectedValue] = useState(null);
 
   useEffect(() => {
-    // Se a rota atual for '/', reseta o valor do input
-    if (location.pathname == '/') {
+    // Se a rota atual for a raiz do site ('/' ou '') reseta o valor do input
+    if (location.pathname === '/' || location.pathname === '') {
       setInputValue('');
       setSelectedValue(null);
     }
-  }, [location.pathname]); // Executa toda vez que a rota mudar
+  }, [location.pathname]);
 
   const handleChange = (event, newValue) => {
     const selectedRegional = regionais.find(
