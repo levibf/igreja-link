@@ -1,21 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { useNavigate } from 'react-router-dom'; // Importa o hook useNavigate
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 import regionais from '../regionais';
 
 export default function SearchBar() {
-  const navigate = useNavigate(); // Hook para navegação
+  const navigate = useNavigate();
+  const location = useLocation(); // Hook para acessar a rota atual
+  const [inputValue, setInputValue] = useState('');
+  const [selectedValue, setSelectedValue] = useState(null);
 
-  const handleInputChange = (event, newValue) => {
+  useEffect(() => {
+    // Se a rota atual for '/', reseta o valor do input
+    if (location.pathname == '/') {
+      setInputValue('');
+      setSelectedValue(null);
+    }
+  }, [location.pathname]); // Executa toda vez que a rota mudar
+
+  const handleChange = (event, newValue) => {
     const selectedRegional = regionais.find(
       (regional) => regional.titulo === newValue
     );
 
     if (selectedRegional) {
-      navigate(selectedRegional.link); // Redireciona para o link correspondente
+      navigate(selectedRegional.link);
+    }
+  };
+
+  const handleInputChange = (event, newInputValue) => {
+    setInputValue(newInputValue);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      const normalizeText = (text) =>
+        text
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase();
+
+      const normalizedInput = normalizeText(inputValue);
+      const regex = new RegExp(normalizedInput.split('').join('.*'), 'i');
+
+      const selectedRegional = regionais.find((regional) =>
+        regex.test(normalizeText(regional.titulo))
+      );
+
+      if (selectedRegional) {
+        navigate(selectedRegional.link);
+      }
     }
   };
 
@@ -23,24 +59,26 @@ export default function SearchBar() {
     <Stack
       sx={{
         width: {
-          xs: '100%', // Ocupa toda a largura em dispositivos móveis
-          sm: 500, // Largura média em tablets
-          md: 700, // Largura em telas médias
-          lg: 900, // Largura em desktops
+          xs: '100%',
+          sm: 500,
+          md: 700,
+          lg: 900,
         },
-        mx: 'auto', // Centraliza horizontalmente
-        // mt: 2, // Margem superior
-        // px: 2, // Padding horizontal
+        mx: 'auto',
       }}
     >
       <Autocomplete
         freeSolo
         id="search-bar"
         disableClearable
-        onInputChange={handleInputChange} // Captura a seleção do usuário
-        options={regionais}
-        groupBy={(option) => option.grupo}  // Agrupando por grupo
-        getOptionLabel={(option) => option.titulo}  // Exibindo o título
+        value={selectedValue} // Controla o valor selecionado
+        onChange={handleChange}
+        onInputChange={handleInputChange}
+        options={regionais.map((regional) => regional.titulo)}
+        groupBy={(option) => {
+          const regional = regionais.find((r) => r.titulo === option);
+          return regional ? regional.grupo : '';
+        }}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -49,6 +87,8 @@ export default function SearchBar() {
               type: 'search',
             }}
             placeholder="Pesquisar..."
+            onKeyDown={handleKeyDown}
+            value={inputValue} // Controla o valor do input
           />
         )}
       />
