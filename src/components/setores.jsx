@@ -11,7 +11,20 @@ const setores = [
       },
       {
         titulo: "Secretaria",
-        link: "https://docs.google.com/spreadsheets/d/18fKF88J2MZj3ZjO4L0n3txGWqqzqcNu1tXWGZgZXRuA"
+        link: [
+          {
+            nome: "Secretaria do Setor",
+            link: "https://docs.google.com/spreadsheets/d/18fKF88J2MZj3ZjO4L0n3txGWqqzqcNu1tXWGZgZXRuA"
+          },
+          {
+            nome: "Controle de Membros",
+            link: "https://docs.google.com/spreadsheets/d/1nsUFFKHhD15r4QRcu76vvetsd6HKYgmRhkHlFdAzYpE"
+          },
+          {
+            nome: "Cartões de Obreiros",
+            link: "https://docs.google.com/spreadsheets/d/1WOTqE2M3GqEpdmtHNA2sU4lt_G0MA_3QvPFFNgUIwOc"
+          }
+        ]
       },
       {
         titulo: "Patrimônio",
