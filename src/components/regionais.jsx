@@ -11,11 +11,11 @@ const regionals = [
             },
             {
                 titulo: "Controle de Membros",
-                link: "regionais/r01/membros"
+                link: "https://docs.google.com/spreadsheets/d/12ZrNdnctiMwBB9Covdti6jDGbqTE6hmhv5YN9-KYNIg"
             },
             {
                 titulo: "Relatório Patrimonial",
-                link: "regionais/r01/patrimonio"
+                link: "https://docs.google.com/spreadsheets/d/1IGyYTKZz9MYCWSwpHNemlCD6bmkYSl4mwhBXktLnTJw"
             }
         ],
         grupo: 'Regional',

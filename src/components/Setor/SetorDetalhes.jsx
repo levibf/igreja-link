@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import { Link } from 'react-router-dom';
 import setores from '../setores';
 import { Box } from '@mui/material';
-import { FaUserEdit, FaMoneyBill, FaFileAlt } from 'react-icons/fa';
+import { FaUserEdit, FaMoneyBill, FaFileAlt, FaArrowRight } from 'react-icons/fa';
 
 const getIconForOption = (titulo) => {
     switch (titulo) {
@@ -16,6 +16,10 @@ const getIconForOption = (titulo) => {
         case 'Controle de Membros':
             return <FaUserEdit />;
         case 'Relatório Patrimonial':
+            return <FaFileAlt />;
+        case 'Secretaria':
+            return <FaFileAlt />;
+        case 'Patrimônio':
             return <FaFileAlt />;
         default:
             return null;
@@ -35,7 +39,7 @@ const SetorDetalhes = () => {
             sx={{
                 textAlign: 'center',
                 padding: '2rem',
-                marginTop: '4rem'
+                marginTop: '4rem',
             }}
         >
             <Typography variant="h4" gutterBottom>
@@ -45,9 +49,9 @@ const SetorDetalhes = () => {
             <Grid container spacing={3}>
                 {setor.opcoes.map((opcao, index) => (
                     <Grid item xs={12} sm={6} md={4} key={index}>
-                        <Card>
+                        <Card sx={{ height: '100%' }}>
                             <CardContent>
-                                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 2 }}>
                                     <Box sx={{ marginRight: 1 }}>
                                         {getIconForOption(opcao.titulo)}
                                     </Box>
@@ -55,9 +59,46 @@ const SetorDetalhes = () => {
                                         {opcao.titulo}
                                     </Typography>
                                 </Box>
-                                <Link to={opcao.link} style={{ textDecoration: 'none', color: 'blue' }}>
-                                    <Typography variant="body2">Ver mais</Typography>
-                                </Link>
+
+                                {/* Verificar se o link é um array ou uma string */}
+                                {Array.isArray(opcao.link) ? (
+                                    <Box>
+                                        {opcao.link.map((subOpcao, subIndex) => (
+                                            <Box key={subIndex} sx={{ marginBottom: 1, textAlign: 'left' }}>
+                                                <Link
+                                                    to={subOpcao.link}
+                                                    style={{
+                                                        textDecoration: 'none',
+                                                        color: '#1976d2',
+                                                        fontWeight: 'bold',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                    }}
+                                                    target="_blank"
+                                                >
+                                                    <FaArrowRight style={{ marginRight: 8 }} />
+                                                    {subOpcao.nome || subOpcao.link}
+                                                </Link>
+                                            </Box>
+                                        ))}
+                                    </Box>
+                                ) : (
+                                    <Link
+                                        to={opcao.link}
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: '#1976d2',
+                                            fontWeight: 'bold',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                        }}
+                                        target="_blank"
+                                    >
+                                        <FaArrowRight style={{ marginRight: 8 }} />
+                                        <Typography variant="body2">Ver mais</Typography>
+                                    </Link>
+                                )}
                             </CardContent>
                         </Card>
                     </Grid>
