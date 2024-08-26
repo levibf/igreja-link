@@ -23,26 +23,27 @@ function Setor() {
       <Box sx={{ height: 80 }} />
 
       <Typography variant="h4" gutterBottom>
-        Setores
-      </Typography>
-      <Grid container spacing={4}>
-        {filteredSetores.map((setor, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card>
-              <Box sx={{ p: 2 }}>
-                <Typography variant="h6" component="h2">
-                  {setor.titulo}
-                </Typography>
-                <Link to={`/setores/${setor.id}`}>
-                  <Typography variant="body2">
-                    Acessar {setor.titulo}
-                  </Typography>
-                </Link>
-              </Box>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+  Setores
+</Typography>
+<Grid container spacing={4}>
+  {filteredSetores.map((setor, index) => (
+    <Grid item key={index} xs={12} sm={6} md={4}>
+      {/* Envolver o Card com o Link para tornar o card inteiro clicável */}
+      <Link to={`/setores/${setor.id}`} style={{ textDecoration: 'none' }}>
+        <Card sx={{ height: '100%' }}> {/* Certifique-se de que o Card ocupa toda a altura disponível */}
+          <Box sx={{ p: 2 }}>
+            <Typography variant="h6" component="h2">
+              {setor.titulo}
+            </Typography>
+            <Typography variant="body2">
+              Acessar {setor.titulo}
+            </Typography>
+          </Box>
+        </Card>
+      </Link>
+    </Grid>
+  ))}
+</Grid>
 
       {/* Configuração das rotas */}
       <Routes>
