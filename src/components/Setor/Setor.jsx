@@ -29,16 +29,16 @@ function Setor() {
         {filteredSetores.map((setor, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <Card>
-              <Box sx={{ p: 2 }}>
-                <Typography variant="h6" component="h2">
-                  {setor.titulo}
-                </Typography>
-                <Link to={`/setores/${setor.id}`}>
+              <Link to={`/setores/${setor.id}`} style={{ color: '#000000', textDecoration: 'none' }}>
+                <Box sx={{ p: 2 }}>
+                  <Typography variant="h6" component="h2">
+                    {setor.titulo}
+                  </Typography>
                   <Typography variant="body2">
                     Acessar {setor.titulo}
                   </Typography>
-                </Link>
-              </Box>
+                </Box>
+              </Link>
             </Card>
           </Grid>
         ))}
