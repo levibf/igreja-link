@@ -7,15 +7,15 @@ const setores = [
     opcoes: [
       {
         titulo: "Tesouraria Setorial",
-        link: "/admontese.com/admontesegestao/s01/tesouraria"
+        link: "https://docs.google.com/spreadsheets/d/1InjZXexhvkV9Ack_TVn1gYCWqsKIEN4D5GKpWnkWJ0A"
       },
       {
-        titulo: "Controle de Membros",
-        link: "/admontese.com/admontesegestao/s01/membros"
+        titulo: "Secretaria",
+        link: "https://docs.google.com/spreadsheets/d/18fKF88J2MZj3ZjO4L0n3txGWqqzqcNu1tXWGZgZXRuA"
       },
       {
-        titulo: "Relatório Patrimonial",
-        link: "/admontese.com/admontesegestao/s01/patrimonio"
+        titulo: "Patrimônio",
+        link: "https://docs.google.com/spreadsheets/d/19B1UAQakk3wtSOGBCyfon1axLfIO2DBctf0NaOhZGy4/"
       }
     ]
   },
