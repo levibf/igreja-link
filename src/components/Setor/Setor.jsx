@@ -18,7 +18,7 @@ function Setor() {
   );
 
   return (
-    <Container sx={{ marginBottom: 10 }}>
+    <Container sx={{ paddingBottom: 2.5 }}>
       {/* Espaço para compensar a altura da AppBar */}
       <Box sx={{ height: 80 }} />
 
