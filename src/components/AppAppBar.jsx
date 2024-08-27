@@ -5,37 +5,15 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-import MenuItem from '@mui/material/MenuItem';
-import Drawer from '@mui/material/Drawer';
-import MenuIcon from '@mui/icons-material/Menu';
-import ToggleColorMode from './ToggleColorMode';
-import { IconButton } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import SearchBar from './Search/SearchBar';
+import ToggleColorMode from './ToggleColorMode';
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
-
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const sectionElement = document.getElementById(sectionId);
-    const offset = 128;
-    if (sectionElement) {
-      const targetScroll = sectionElement.offsetTop - offset;
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
-      window.scrollTo({
-        top: targetScroll,
-        behavior: 'smooth',
-      });
-      setOpen(false);
-    }
-  };
 
   return (
     <div>
@@ -72,24 +50,14 @@ function AppAppBar({ mode, toggleColorMode }) {
             })}
           >
             <Link to='/' style={{ paddingRight: '28px' }}>
-              <IconButton
-                aria-label="Home"
-                sx={{ alignSelf: 'center' }}
-                title='Home'
-              >
+              <IconButton aria-label="Home" sx={{ alignSelf: 'center' }} title='Home'>
                 <Box
                   component="img"
                   src={logo}
                   alt="admontese"
                   sx={{
-                    width: {
-                      xs: 25, // Altura para telas pequenas (celular)
-                      md: 35, // Altura para telas médias e grandes (PC)
-                    },
-                    height: {
-                      xs: 20, // Altura para telas pequenas (celular)
-                      md: 35, // Altura para telas médias e grandes (PC)
-                    },
+                    width: { xs: 25, md: 35 },
+                    height: { xs: 20, md: 35 },
                   }}
                 />
               </IconButton>
@@ -106,86 +74,32 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <SearchBar /> {/* Campo de busca com resultados */}
             </Box>
-            <Box
-              sx={{
-                display: { xs: 'none', md: 'flex' },
-                gap: 0.5,
-                alignItems: 'center',
-              }}
-            >
+            <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
             </Box>
-            {/* <Box sx={{ display: { sm: '', md: 'none' } }}>
-              <Button
-                variant="text"
-                color="primary"
-                aria-label="menu"
-                onClick={toggleDrawer(true)}
-                sx={{ minWidth: '30px', p: '4px' }}
-              >
-                <MenuIcon />
-              </Button>
-              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-                <Box
-                  sx={{
-                    minWidth: '60dvw',
-                    p: 2,
-                    backgroundColor: 'background.paper',
-                    flexGrow: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'end',
-                      flexGrow: 1,
-                    }}
-                  >
-                    <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-                  </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
-                    Testimonials
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
-                    Highlights
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                  <Divider />
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="contained"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign up
-                    </Button>
-                  </MenuItem>
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="outlined"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-in/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign in
-                    </Button>
-                  </MenuItem>
-                </Box>
-              </Drawer>
-            </Box> */}
           </Toolbar>
+          <Box
+            sx={{
+              // bgcolor: mode === 'light' ? 'white' : 'grey.900',
+              py: 0.2,
+              boxShadow: 0,
+            }}
+          >
+            <Container maxWidth="lg">
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-around',
+                }}
+              >
+                <Button component={Link} to="/regionais" color="inherit">Regionais</Button>
+                <Button component={Link} to="/setores" color="inherit">Setores</Button>
+                <Button component={Link} to="/section3" color="inherit">Administração Geral</Button>
+                <Button component={Link} to="/section4" color="inherit">Tutoriais</Button>
+                <Button component={Link} to="/section4" color="inherit">Diversos</Button>
+              </Box>
+            </Container>
+          </Box>
         </Container>
       </AppBar>
     </div>
