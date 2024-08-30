@@ -168,7 +168,6 @@ function AppAppBar({ mode, toggleColorMode }) {
               display: { xs: 'none', md: 'flex' },
               py: 0.2,
               boxShadow: 0,
-              back
             }}
           >
             <Container maxWidth="lg">
