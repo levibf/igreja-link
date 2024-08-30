@@ -59,12 +59,12 @@ export default function SearchBar() {
     <Stack
       sx={{
         width: {
-          xs: '100%',
-          sm: 500,
+          xs: 250,
+          sm: 250,
           md: 700,
           lg: 900,
         },
-        mx: 'auto',
+        mx: -1,
       }}
     >
       <Autocomplete
