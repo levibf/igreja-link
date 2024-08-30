@@ -62,7 +62,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
-            {/* <Link to='/' style={{ paddingRight: '28px' }}>
+            <Link to='/' style={{ paddingRight: '28px' }}>
               <IconButton aria-label="Home" sx={{ alignSelf: 'center' }} title='Home'>
                 <Box
                   component="img"
@@ -74,7 +74,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   }}
                 />
               </IconButton>
-            </Link> */}
+            </Link>
             <Box
               sx={{
                 flexGrow: 1,
