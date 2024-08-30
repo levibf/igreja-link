@@ -8,12 +8,11 @@ import regionais from '../regionais';
 
 export default function SearchBar() {
   const navigate = useNavigate();
-  const location = useLocation(); // Hook para acessar a rota atual
+  const location = useLocation();
   const [inputValue, setInputValue] = useState('');
   const [selectedValue, setSelectedValue] = useState(null);
 
   useEffect(() => {
-    // Se a rota atual for a raiz do site ('/' ou '') reseta o valor do input
     if (location.pathname === '/' || location.pathname === '') {
       setInputValue('');
       setSelectedValue(null);
@@ -56,45 +55,58 @@ export default function SearchBar() {
   };
 
   return (
-    <Stack
+    <Box
       sx={{
-        width: {
-          xs: 250,
-          sm: 200,
-          md: 700,
-          lg: 900,
-        },
-        mr: {
-          xs: '-1%',
-        },
-        mx: 'auto',
+        width: '100%',
+        maxWidth: '100%',
+        mx: 0,
+        mt: 0,
+        px: 0,
+        boxSizing: 'border-box',
       }}
     >
-      <Autocomplete
-        freeSolo
-        id="search-bar"
-        disableClearable
-        value={selectedValue} // Controla o valor selecionado
-        onChange={handleChange}
-        onInputChange={handleInputChange}
-        options={regionais.map((regional) => regional.titulo)}
-        groupBy={(option) => {
-          const regional = regionais.find((r) => r.titulo === option);
-          return regional ? regional.grupo : '';
+      <Stack
+        direction={{ xs: 'column', sm: 'row' }} // Ajusta a direção para colunar em xs e para linha em sm
+        spacing={2}
+        alignItems="center"
+        sx={{
+          width: '100%',
+          flexWrap: 'wrap', // Permite que os itens se movam para a linha abaixo se não houver espaço suficiente
         }}
-        renderInput={(params) => (
-          <TextField
-            {...params}
-            InputProps={{
-              ...params.InputProps,
-              type: 'search',
+      >
+        <Box sx={{ flexGrow: 1, minWidth: { xs: '100%', sm: '200px' } }}> {/* Define 100% da largura para xs */}
+          <Autocomplete
+            freeSolo
+            id="search-bar"
+            disableClearable
+            value={selectedValue}
+            onChange={handleChange}
+            onInputChange={handleInputChange}
+            options={regionais.map((regional) => regional.titulo)}
+            groupBy={(option) => {
+              const regional = regionais.find((r) => r.titulo === option);
+              return regional ? regional.grupo : '';
             }}
-            placeholder="Pesquisar..."
-            onKeyDown={handleKeyDown}
-            value={inputValue} // Controla o valor do input
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                InputProps={{
+                  ...params.InputProps,
+                  type: 'search',
+                }}
+                placeholder="Pesquisar..."
+                onKeyDown={handleKeyDown}
+                value={inputValue}
+                sx={{
+                  width: '100%',
+                  flexGrow: 1,
+                }}
+              />
+            )}
           />
-        )}
-      />
-    </ Stack>
+        </Box>
+        {/* Adicione outros elementos aqui, se necessário */}
+      </Stack>
+    </Box>
   );
 }
