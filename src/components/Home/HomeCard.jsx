@@ -12,7 +12,7 @@ export default function HomeCard() {
                 alignItems: 'center',
                 textAlign: 'center',
                 padding: '2rem',
-                marginTop: '5.5rem'
+                marginTop: '10rem'
             }}
         >
             <Container maxWidth="md" sx={{

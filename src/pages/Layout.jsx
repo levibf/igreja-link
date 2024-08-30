@@ -14,6 +14,7 @@ import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from '../components/AppAppBar';
 import Footer from '../components/Footer';
 import getLPTheme from '../getLPTheme';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
     return (

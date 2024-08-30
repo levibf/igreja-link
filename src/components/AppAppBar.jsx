@@ -166,8 +166,16 @@ function AppAppBar({ mode, toggleColorMode }) {
           <Box
             sx={{
               display: { xs: 'none', md: 'flex' },
+              justifyContent: 'center',
               py: 0.2,
+              backgroundColor: 'background.default', // Define a cor de fundo
+              border: '1px solid', // Adiciona a borda
+              borderColor: 'divider', // Define a cor da borda
+              borderRadius: '2em', // Opcional: arredonda os cantos
               boxShadow: 0,
+              margin: '7px',
+              maxWidth: '1000px',
+              marginLeft: 10
             }}
           >
             <Container maxWidth="lg">
@@ -177,11 +185,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                   justifyContent: 'space-around',
                 }}
               >
-                <Button component={Link} to="/regionais" color="inherit">Regionais</Button>
-                <Button component={Link} to="/setores" color="inherit">Setores</Button>
-                <Button component={Link} to="/section3" color="inherit">Administração Geral</Button>
-                <Button component={Link} to="/section4" color="inherit">Tutoriais</Button>
-                <Button component={Link} to="/section4" color="inherit">Diversos</Button>
+                <Button component={Link} to="/regionais" color="inherit" sx={{ color: '#000000' }}>Regionais</Button>
+                <Button component={Link} to="/setores" color="inherit" sx={{ color: '#000000' }}>Setores</Button>
+                <Button component={Link} to="/section3" color="inherit" sx={{ color: '#000000' }}>Administração Geral</Button>
+                <Button component={Link} to="/section4" color="inherit" sx={{ color: '#000000' }}>Tutoriais</Button>
+                <Button component={Link} to="/section4" color="inherit" sx={{ color: '#000000' }}>Diversos</Button>
               </Box>
             </Container>
           </Box>

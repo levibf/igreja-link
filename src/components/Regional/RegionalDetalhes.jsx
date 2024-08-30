@@ -35,7 +35,7 @@ const RegionalDetalhes = () => {
             sx={{
                 textAlign: 'center',
                 padding: '2rem',
-                marginTop: '5rem'
+                marginTop: 'rem'
             }}
         >
             <Typography variant="h4" gutterBottom>
