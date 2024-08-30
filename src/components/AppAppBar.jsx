@@ -7,6 +7,10 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
+import Drawer from '@mui/material/Drawer';
+import MenuIcon from '@mui/icons-material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Divider from '@mui/material/Divider';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import SearchBar from './Search/SearchBar';
@@ -14,6 +18,15 @@ import ToggleColorMode from './ToggleColorMode';
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (open) => () => {
+    setOpen(open);
+  };
+
+  const scrollToSection = (section) => {
+    // Logic to scroll to the section
+    // console.log(`Scrolling to section: ${section}`);
+  };
 
   return (
     <div>
@@ -77,12 +90,85 @@ function AppAppBar({ mode, toggleColorMode }) {
             <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
             </Box>
+            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+              <Button
+                variant="text"
+                color="primary"
+                aria-label="menu"
+                onClick={toggleDrawer(true)}
+                sx={{ minWidth: '30px', p: '4px' }}
+              >
+                <MenuIcon />
+              </Button>
+              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+                <Box
+                  sx={{
+                    minWidth: '60dvw',
+                    p: 2,
+                    backgroundColor: 'background.paper',
+                    flexGrow: 1,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'end',
+                      flexGrow: 1,
+                    }}
+                  >
+                    <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
+                  </Box>
+                  <MenuItem onClick={() => scrollToSection('features')}>
+                    <Button component={Link} to="/regionais" color="inherit">Regionais</Button>
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                    <Button component={Link} to="/setores" color="inherit">Setores</Button>
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                    <Button component={Link} to="/section3" color="inherit">Administração Geral</Button>
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('pricing')}>
+                    <Button component={Link} to="/section4" color="inherit">Tutoriais</Button>
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('faq')}>
+                    <Button component={Link} to="/section4" color="inherit">Diversos</Button>
+                  </MenuItem>
+                  {/* <Divider />
+                  <MenuItem>
+                    <Button
+                      color="primary"
+                      variant="contained"
+                      component="a"
+                      href="/material-ui/getting-started/templates/sign-up/"
+                      target="_blank"
+                      sx={{ width: '100%' }}
+                    >
+                      Sign up
+                    </Button>
+                  </MenuItem>
+                  <MenuItem>
+                    <Button
+                      color="primary"
+                      variant="outlined"
+                      component="a"
+                      href="/material-ui/getting-started/templates/sign-in/"
+                      target="_blank"
+                      sx={{ width: '100%' }}
+                    >
+                      Sign in
+                    </Button>
+                  </MenuItem> */}
+                </Box>
+              </Drawer>
+            </Box>
           </Toolbar>
           <Box
             sx={{
-              // bgcolor: mode === 'light' ? 'white' : 'grey.900',
+              display: { xs: 'none', md: 'flex' },
               py: 0.2,
               boxShadow: 0,
+              back
             }}
           >
             <Container maxWidth="lg">

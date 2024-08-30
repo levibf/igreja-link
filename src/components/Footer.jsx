@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
 import { Stack } from '@mui/material';
-import { FaWhatsapp } from "react-icons/fa";
+import { FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -80,7 +80,7 @@ export default function Footer() {
             target='_blank'
             title='Localizacao'
           >
-            <TiLocation />
+            <FaMapMarkerAlt />
           </IconButton>
         </Stack>
       </Box>
