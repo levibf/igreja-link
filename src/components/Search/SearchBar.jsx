@@ -59,9 +59,9 @@ export default function SearchBar() {
       sx={{
         width: '100%',
         maxWidth: '100%',
-        mx: 0,
+        mx: 1,
         mt: 0,
-        px: 0,
+        px: 2,
         boxSizing: 'border-box',
       }}
     >
