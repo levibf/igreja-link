@@ -60,11 +60,14 @@ export default function SearchBar() {
       sx={{
         width: {
           xs: 250,
-          sm: 250,
+          sm: 200,
           md: 700,
           lg: 900,
         },
-        mx: -1,
+        mr: {
+          xs: '-1%',
+        },
+        mx: 'auto',
       }}
     >
       <Autocomplete
@@ -92,6 +95,6 @@ export default function SearchBar() {
           />
         )}
       />
-    </Stack>
+    </ Stack>
   );
 }
