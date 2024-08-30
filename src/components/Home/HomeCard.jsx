@@ -6,12 +6,21 @@ export default function HomeCard() {
     return (
         <Box
             sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
                 textAlign: 'center',
                 padding: '2rem',
-                marginTop: '4rem'
+                marginTop: '5.5rem'
             }}
         >
-            <Container maxWidth="md">
+            <Container maxWidth="md" sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
                 {/* Título e Subtítulo */}
                 <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
                     Gestão
@@ -24,7 +33,7 @@ export default function HomeCard() {
                 </Typography>
 
                 {/* Botões Centrais */}
-                <Box
+                {/* <Box
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
@@ -50,10 +59,10 @@ export default function HomeCard() {
                     >
                         ADMINISTRAÇÃO GERAL
                     </Button>
-                </Box>
+                </Box> */}
 
                 {/* Botões Inferiores */}
-                <Box
+                {/* <Box
                     sx={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(2, 1fr)',
@@ -130,7 +139,7 @@ export default function HomeCard() {
                     >
                         DIVERSOS
                     </Button>
-                </Box>
+                </Box> */}
             </Container>
         </Box>
     );

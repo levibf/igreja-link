@@ -20,29 +20,29 @@ function Features() {
   return (
     <Container sx={{ marginBottom: 10 }}>
       {/* Espaço para compensar a altura da AppBar */}
-      <Box sx={{ height: 80 }} />
+      <Box sx={{ height: 110 }} />
       <Typography variant="h4" gutterBottom>
-  Regionais
-</Typography>
-<Grid container spacing={4}>
-  {filteredRegionals.map((regional, index) => (
-    <Grid item key={index} xs={12} sm={6} md={4}>
-      {/* Envolver o Card com o Link para tornar o card inteiro clicável */}
-      <Link to={`/regionais/${regional.id}`} style={{ textDecoration: 'none' }}>
-        <Card sx={{ height: '100%' }}> {/* Certifique-se de que o Card ocupa toda a altura disponível */}
-          <Box sx={{ p: 2 }}>
-            <Typography variant="h5" component="h2">
-              {regional.titulo}
-            </Typography>
-            <Typography variant="body2">
-              Acessar sua {regional.titulo}
-            </Typography>
-          </Box>
-        </Card>
-      </Link>
-    </Grid>
-  ))}
-</Grid>
+        Regionais
+      </Typography>
+      <Grid container spacing={4}>
+        {filteredRegionals.map((regional, index) => (
+          <Grid item key={index} xs={12} sm={6} md={4}>
+            {/* Envolver o Card com o Link para tornar o card inteiro clicável */}
+            <Link to={`/regionais/${regional.id}`} style={{ textDecoration: 'none' }}>
+              <Card sx={{ height: '100%' }}> {/* Certifique-se de que o Card ocupa toda a altura disponível */}
+                <Box sx={{ p: 2 }}>
+                  <Typography variant="h5" component="h2">
+                    {regional.titulo}
+                  </Typography>
+                  <Typography variant="body2">
+                    Acessar sua {regional.titulo}
+                  </Typography>
+                </Box>
+              </Card>
+            </Link>
+          </Grid>
+        ))}
+      </Grid>
 
 
       {/* Configuração das rotas */}
