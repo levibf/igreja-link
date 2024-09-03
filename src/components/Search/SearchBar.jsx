@@ -5,12 +5,15 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 import regionais from '../regionais';
+import setores from '../setores';
 
 export default function SearchBar() {
   const navigate = useNavigate();
   const location = useLocation(); // Hook para acessar a rota atual
   const [inputValue, setInputValue] = useState('');
   const [selectedValue, setSelectedValue] = useState(null);
+
+  const allOptions = [...regionais, ...setores]; // Combine regionais e setores
 
   useEffect(() => {
     // Se a rota atual for a raiz do site ('/' ou '') reseta o valor do input
@@ -21,12 +24,12 @@ export default function SearchBar() {
   }, [location.pathname]);
 
   const handleChange = (event, newValue) => {
-    const selectedRegional = regionais.find(
-      (regional) => regional.titulo === newValue
+    const selectedItem = allOptions.find(
+      (item) => item.titulo === newValue
     );
 
-    if (selectedRegional) {
-      navigate(selectedRegional.link);
+    if (selectedItem) {
+      navigate(selectedItem.link);
     }
   };
 
@@ -45,12 +48,12 @@ export default function SearchBar() {
       const normalizedInput = normalizeText(inputValue);
       const regex = new RegExp(normalizedInput.split('').join('.*'), 'i');
 
-      const selectedRegional = regionais.find((regional) =>
-        regex.test(normalizeText(regional.titulo))
+      const selectedItem = allOptions.find((item) =>
+        regex.test(normalizeText(item.titulo))
       );
 
-      if (selectedRegional) {
-        navigate(selectedRegional.link);
+      if (selectedItem) {
+        navigate(selectedItem.link);
       }
     }
   };
@@ -74,10 +77,10 @@ export default function SearchBar() {
         value={selectedValue} // Controla o valor selecionado
         onChange={handleChange}
         onInputChange={handleInputChange}
-        options={regionais.map((regional) => regional.titulo)}
+        options={allOptions.map((item) => item.titulo)}
         groupBy={(option) => {
-          const regional = regionais.find((r) => r.titulo === option);
-          return regional ? regional.grupo : '';
+          const item = allOptions.find((r) => r.titulo === option);
+          return item ? item.grupo : '';
         }}
         renderInput={(params) => (
           <TextField

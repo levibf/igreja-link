@@ -20,7 +20,7 @@ function NotFound() {
     }, [countdown, navigate]);
 
     return (
-        <Container sx={{ textAlign: 'center', marginTop: 15 }}>
+        <Container sx={{ textAlign: 'center', marginTop: 20 }}>
             <Typography variant="h2" gutterBottom>
                 404
             </Typography>
