@@ -25,7 +25,7 @@ export default defineConfig({
             type: 'image/png'
           }
         ],
-        start_url: 'https://igreja-link.vercel.app/',
+        start_url: '/',
         display: 'standalone',
         theme_color: '#000000',
         background_color: '#ffffff'
