@@ -9,30 +9,6 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
-      manifest: {
-        name: 'Igreja Links',
-        short_name: 'Igreja Links',
-        description: 'Descrição do meu app',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: './logo.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: './logo.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: './logo.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
-      },
     }),
   ],
 })
