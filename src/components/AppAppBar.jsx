@@ -185,11 +185,19 @@ function AppAppBar({ mode, toggleColorMode }) {
                   justifyContent: 'space-around',
                 }}
               >
-                <Button component={Link} to="/regionais" color="inherit" sx={{ color: '#000000' }}>Regionais</Button>
-                <Button component={Link} to="/setores" color="inherit" sx={{ color: '#000000' }}>Setores</Button>
-                <Button component={Link} to="/section3" color="inherit" sx={{ color: '#000000' }}>Administração Geral</Button>
-                <Button component={Link} to="/section4" color="inherit" sx={{ color: '#000000' }}>Tutoriais</Button>
-                <Button component={Link} to="/section4" color="inherit" sx={{ color: '#000000' }}>Diversos</Button>
+                {['/regionais', '/setores', '/admgeral', '/tutoriais', '/diversos'].map((path, index) => (
+                  <Button
+                    key={path}
+                    component={Link}
+                    to={path}
+                    color="inherit"
+                    sx={(theme) => ({
+                      color: theme.palette.mode === 'dark' ? '#FFFFFF' : '#000000', // Botão branco no modo noturno
+                    })}
+                  >
+                    {['Regionais', 'Setores', 'Administração Geral', 'Tutoriais', 'Diversos'][index]}
+                  </Button>
+                ))}
               </Box>
             </Container>
           </Box>
