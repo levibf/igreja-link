@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt'],
+      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Igreja Links',
         short_name: 'Igreja Links',
@@ -24,6 +24,12 @@ export default defineConfig({
             src: './src/assets/logo.png',
             sizes: '512x512',
             type: 'image/png',
+          },
+          {
+            src: './src/assets/logo.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
           },
         ],
       },
