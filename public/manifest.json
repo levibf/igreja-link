@@ -1,7 +1,7 @@
 {
-  "name": "AD Montese Links",
-  "description": "Descrição do meu app",
-  "short_name": "Igreja Link2",
+  "name": "AD Montese",
+  "description": "Links para redirecionamento",
+  "short_name": "AD Montese",
   "icons": [
     {
       "src": "logo192.png",
