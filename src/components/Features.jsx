@@ -18,7 +18,7 @@ function Features() {
   );
 
   return (
-    <Container sx={{ marginBottom: 10 }}>
+    <Container sx={{ paddingBottom: 2.5 }}>
       {/* Espaço para compensar a altura da AppBar */}
       <Box sx={{ height: 130 }} />
       <Typography variant="h4" gutterBottom>
