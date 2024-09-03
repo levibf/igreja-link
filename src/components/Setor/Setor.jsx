@@ -31,7 +31,7 @@ function Setor() {
             <Link to={`/setores/${setor.id}`} style={{ textDecoration: 'none' }}>
               <Card>
                 <Box sx={{ p: 2 }}>
-                  <Typography variant="h6" component="h2">
+                  <Typography variant="h5" component="h2">
                     {setor.titulo}
                   </Typography>
                   <Typography variant="body2">
