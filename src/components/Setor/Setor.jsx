@@ -28,8 +28,8 @@ function Setor() {
       <Grid container spacing={4}>
         {filteredSetores.map((setor, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card>
-              <Link to={`/setores/${setor.id}`} style={{ color: '#000000', textDecoration: 'none' }}>
+            <Link to={`/setores/${setor.id}`} style={{ textDecoration: 'none' }}>
+              <Card>
                 <Box sx={{ p: 2 }}>
                   <Typography variant="h6" component="h2">
                     {setor.titulo}
@@ -38,8 +38,8 @@ function Setor() {
                     Acessar {setor.titulo}
                   </Typography>
                 </Box>
-              </Link>
-            </Card>
+              </Card>
+            </Link>
           </Grid>
         ))}
       </Grid>
