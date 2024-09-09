@@ -119,19 +119,19 @@ function AppAppBar({ mode, toggleColorMode }) {
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
+                  <MenuItem>
                     <Button component={Link} to="/regionais" color="inherit">Regionais</Button>
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                  <MenuItem>
                     <Button component={Link} to="/setores" color="inherit">Setores</Button>
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                  <MenuItem>
                     <Button component={Link} to="/section3" color="inherit">Administração Geral</Button>
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
+                  <MenuItem>
                     <Button component={Link} to="/section4" color="inherit">Tutoriais</Button>
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>
+                  <MenuItem>
                     <Button component={Link} to="/section4" color="inherit">Diversos</Button>
                   </MenuItem>
                   {/* <Divider />
