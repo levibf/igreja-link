@@ -34,9 +34,11 @@ function AppAppBar({ mode, toggleColorMode }) {
         position="fixed"
         sx={{
           boxShadow: 0,
-          bgcolor: 'transparent',
+          bgcolor: '#d9cbbe',
           backgroundImage: 'none',
           mt: 2,
+          
+        
         }}
       >
         <Container maxWidth="lg">
@@ -47,19 +49,16 @@ function AppAppBar({ mode, toggleColorMode }) {
               alignItems: 'center',
               justifyContent: 'space-between',
               flexShrink: 0,
-              borderRadius: '999px',
-              bgcolor:
-                theme.palette.mode === 'light'
-                  ? 'rgba(255, 255, 255, 0.4)'
-                  : 'rgba(0, 0, 0, 0.4)',
+              // borderRadius: '999px',
+             
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
-              border: '1px solid',
-              borderColor: 'divider',
-              boxShadow:
-                theme.palette.mode === 'light'
-                  ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                  : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
+              // border: '1px solid',
+              // borderColor: 'divider',
+              // boxShadow:
+              //   theme.palette.mode === 'light'
+              //     ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
+              //     : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
             <Link to='/' style={{ paddingRight: '28px' }}>
@@ -71,6 +70,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{
                     width: { xs: 25, md: 35 },
                     height: { xs: 20, md: 35 },
+                    
+                  
                   }}
                 />
               </IconButton>
@@ -83,6 +84,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 justifyContent: 'center',
                 ml: '-18px',
                 px: 0,
+                
+               
               }}
             >
               <SearchBar /> {/* Campo de busca com resultados */}
@@ -107,6 +110,9 @@ function AppAppBar({ mode, toggleColorMode }) {
                     p: 2,
                     backgroundColor: 'background.paper',
                     flexGrow: 1,
+                    
+                    
+                 
                   }}
                 >
                   <Box
@@ -115,6 +121,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                       flexDirection: 'column',
                       alignItems: 'end',
                       flexGrow: 1,
+                      
+                   
                     }}
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
@@ -168,11 +176,11 @@ function AppAppBar({ mode, toggleColorMode }) {
               display: { xs: 'none', md: 'flex' },
               justifyContent: 'center',
               py: 0.2,
-              backgroundColor: 'background.default', // Define a cor de fundo
-              border: '1px solid', // Adiciona a borda
-              borderColor: 'divider', // Define a cor da borda
-              borderRadius: '2em', // Opcional: arredonda os cantos
-              boxShadow: 0,
+              // backgroundColor: 'white', // Define a cor de fundo
+              // border: '1px solid', // Adiciona a borda
+              // borderColor: 'divider', // Define a cor da borda
+              // borderRadius: '2em', // Opcional: arredonda os cantos
+              // boxShadow: 0,
               margin: '7px',
               maxWidth: '1000px',
               marginLeft: 10
@@ -183,6 +191,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-around',
+                
+                
                 }}
               >
                 {['/regionais', '/setores', '/admgeral', '/tutoriais', '/diversos'].map((path, index) => (
