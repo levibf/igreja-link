@@ -36,7 +36,7 @@ function AppAppBar({ mode, toggleColorMode }) {
           boxShadow: 0,
           bgcolor: '#d9cbbe',
           backgroundImage: 'none',
-          mt: 2,
+          // mt: 2,
 
 
         }}
