@@ -1,63 +1,46 @@
 import React, { useState } from 'react';
+import { Checkbox, FormControlLabel, FormGroup } from '@mui/material';
+import RegionalDetalhes from './Regional/RegionalDetalhes';
+import regionals from './regionais';  // Supondo que o array de regionais seja importado
 
 const FilterComponent = () => {
-    const data = [
-        { regional: 'North', sectors: ['Sector 1', 'Sector 2'] },
-        { regional: 'South', sectors: ['Sector 3', 'Sector 4'] },
-        { regional: 'East', sectors: ['Sector 5', 'Sector 6'] },
-        { regional: 'West', sectors: ['Sector 7', 'Sector 8'] },
-    ];
+  const [selectedRegionals, setSelectedRegionals] = useState([]);
 
-    const [selectedRegionals, setSelectedRegionals] = useState([]);
+  const handleSelectionChange = (id) => {
+    setSelectedRegionals((prevSelected) => {
+      if (prevSelected.includes(id)) {
+        return prevSelected.filter(regionalId => regionalId !== id);
+      } else {
+        return [...prevSelected, id];
+      }
+    });
+  };
 
-    // Atualizar regionais selecionadas
-    const handleRegionalChange = (event) => {
-        const { value, checked } = event.target;
-        if (checked) {
-            setSelectedRegionals([...selectedRegionals, value]);
-        } else {
-            setSelectedRegionals(selectedRegionals.filter((regional) => regional !== value));
-        }
-    };
+  // Filtra as regionais selecionadas com base nos IDs
+  const filteredRegionals = regionals.filter(regional => selectedRegionals.includes(regional.id));
 
-    // Filtrar regionais com base na seleção
-    const filteredData = selectedRegionals.length
-        ? data.filter((item) => selectedRegionals.includes(item.regional))
-        : data;
+  return (
+    <div>
+      {/* Cria uma lista de checkboxes para selecionar regionais */}
+      <FormGroup>
+        {regionals.map((regional) => (
+          <FormControlLabel
+            key={regional.id}
+            control={
+              <Checkbox
+                checked={selectedRegionals.includes(regional.id)}
+                onChange={() => handleSelectionChange(regional.id)}
+              />
+            }
+            label={regional.titulo}
+          />
+        ))}
+      </FormGroup>
 
-    return (
-        <div>
-            <h2>Filtro Teste</h2>
-
-            {/* Checkbox para cada regional */}
-            {data.map((item) => (
-                <div key={item.regional}>
-                    <label>
-                        <input
-                            type="checkbox"
-                            value={item.regional}
-                            onChange={handleRegionalChange}
-                        />
-                        {item.regional}
-                    </label>
-                </div>
-            ))}
-
-            {/* Exibir as regionais e setores filtrados */}
-            <div>
-                {filteredData.map((item) => (
-                    <div key={item.regional}>
-                        <h3>{item.regional}</h3>
-                        <ul>
-                            {item.sectors.map((sector) => (
-                                <li key={sector}>{sector}</li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+      {/* Passa as regionais filtradas para o componente RegionalDetalhes */}
+      <RegionalDetalhes regionais={filteredRegionals} />
+    </div>
+  );
 };
 
 export default FilterComponent;

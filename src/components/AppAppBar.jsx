@@ -37,8 +37,8 @@ function AppAppBar({ mode, toggleColorMode }) {
           bgcolor: '#d9cbbe',
           backgroundImage: 'none',
           mt: 2,
-          
-        
+
+
         }}
       >
         <Container maxWidth="lg">
@@ -50,7 +50,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               justifyContent: 'space-between',
               flexShrink: 0,
               // borderRadius: '999px',
-             
+
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               // border: '1px solid',
@@ -70,8 +70,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{
                     width: { xs: 25, md: 35 },
                     height: { xs: 20, md: 35 },
-                    
-                  
+
+
                   }}
                 />
               </IconButton>
@@ -84,8 +84,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 justifyContent: 'center',
                 ml: '-18px',
                 px: 0,
-                
-               
+
+
               }}
             >
               <SearchBar /> {/* Campo de busca com resultados */}
@@ -110,9 +110,9 @@ function AppAppBar({ mode, toggleColorMode }) {
                     p: 2,
                     backgroundColor: 'background.paper',
                     flexGrow: 1,
-                    
-                    
-                 
+
+
+
                   }}
                 >
                   <Box
@@ -121,8 +121,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                       flexDirection: 'column',
                       alignItems: 'end',
                       flexGrow: 1,
-                      
-                   
+
+
                     }}
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
@@ -191,8 +191,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-around',
-                
-                
                 }}
               >
                 {['/regionais', '/setores', '/admgeral', '/tutoriais', '/diversos'].map((path, index) => (
@@ -200,7 +198,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                     key={path}
                     component={Link}
                     to={path}
-                    color="inherit"
                     sx={(theme) => ({
                       color: theme.palette.mode === 'dark' ? '#FFFFFF' : '#000000', // Botão branco no modo noturno
                     })}
