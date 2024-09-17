@@ -20,9 +20,9 @@ const FilterComponent = () => {
   const filteredRegionals = regionals.filter(regional => selectedRegionals.includes(regional.id));
 
   return (
-    <div className='Filtro'>
+    <div>
       {/* Cria uma lista de checkboxes para selecionar regionais */}
-      <FormGroup>
+      <FormGroup className='Filtro'>
         {regionals.map((regional) => (
           <FormControlLabel
             key={regional.id}

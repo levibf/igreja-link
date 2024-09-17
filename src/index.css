@@ -9,8 +9,10 @@
     padding: 0px !important;
 }
 
-/* .Filtro {
+.Filtro {
     position: absolute;
-    z-index: 1;
-    gap: 2;
-} */
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-top: 10em;
+}

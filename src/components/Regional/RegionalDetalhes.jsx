@@ -23,9 +23,9 @@ const getIconForOption = (titulo) => {
 
 // Modificação no componente para lidar com várias regionais
 const RegionalDetalhes = ({ regionais }) => {
-    if (!regionais || regionais.length === 0) {
-        return <div>Nenhuma regional selecionada</div>;
-    }
+    // if (!regionais || regionais.length === 0) {
+    //     return <div>Nenhuma regional selecionada</div>;
+    // }
 
     return (
         <Box
