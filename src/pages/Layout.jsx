@@ -14,7 +14,8 @@ import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import AppAppBar from '../components/AppAppBar';
 import Footer from '../components/Footer';
 import getLPTheme from '../getLPTheme';
-import PerfectScrollbar from 'react-perfect-scrollbar'
+import PerfectScrollbar from 'react-perfect-scrollbar';
+import FilterComponent from '../components/FilterComponent';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
     return (
@@ -76,6 +77,7 @@ export default function Layout() {
                     <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
                     <Box sx={{ bgcolor: 'background.default' }}>
                         <RoutesPages />
+                        <FilterComponent />
                     </Box>
                     <Footer />
                 </ThemeProvider>
