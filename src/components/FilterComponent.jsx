@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Checkbox, FormControlLabel, Button FormGroup, Menu, MenuItem } from '@mui/material';
+import { Checkbox, FormControlLabel, Button, FormGroup, Menu, MenuItem } from '@mui/material';
 import RegionalDetalhes from './Regional/RegionalDetalhes';
 import regionals from './regionais'; // Supondo que o array de regionais seja importado
 
