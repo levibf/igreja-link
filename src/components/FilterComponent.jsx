@@ -1,115 +1,215 @@
 import React, { useState } from 'react';
-import { Checkbox, FormControlLabel, Button, FormGroup, Menu, MenuItem } from '@mui/material';
+import { useLocation } from 'react-router-dom'; // Importando useLocation
+import { Checkbox, FormControlLabel, Button, FormGroup, Menu, Box } from '@mui/material';
 import FilterComponentDetail from './FilterComponentDetail';
 import regionals from './regionais'; // Supondo que o array de regionais seja importado
 import setores from './setores'; // Importando os setores
 
 const FilterComponent = () => {
-  // Estados para regionais e setores selecionados
   const [selectedRegionals, setSelectedRegionals] = useState([]);
   const [selectedSetores, setSelectedSetores] = useState([]);
-
-  // Estados para abrir e fechar os menus
   const [anchorElRegionals, setAnchorElRegionals] = useState(null);
   const [anchorElSetores, setAnchorElSetores] = useState(null);
 
-  // Função para abrir o menu de regionais
+  const location = useLocation(); // Usando useLocation para obter a URL atual
+  const isHomePage = location.pathname === '/'; // Verifica se está na página inicial
+
   const handleDropdownClickRegionals = (event) => {
     setAnchorElRegionals(event.currentTarget);
   };
 
-  // Função para fechar o menu de regionais
   const handleDropdownCloseRegionals = () => {
     setAnchorElRegionals(null);
   };
 
-  // Função para abrir o menu de setores
   const handleDropdownClickSetores = (event) => {
     setAnchorElSetores(event.currentTarget);
   };
 
-  // Função para fechar o menu de setores
   const handleDropdownCloseSetores = () => {
     setAnchorElSetores(null);
   };
 
-  // Função para gerenciar a seleção de regionais
   const handleSelectionChangeRegionals = (id) => {
     setSelectedRegionals((prevSelected) =>
       prevSelected.includes(id) ? prevSelected.filter((regionalId) => regionalId !== id) : [...prevSelected, id]
     );
   };
 
-  // Função para gerenciar a seleção de setores
   const handleSelectionChangeSetores = (id) => {
     setSelectedSetores((prevSelected) =>
       prevSelected.includes(id) ? prevSelected.filter((setorId) => setorId !== id) : [...prevSelected, id]
     );
   };
 
-  // Filtrar regionais e setores selecionados
   const filteredRegionals = regionals.filter((regional) => selectedRegionals.includes(regional.id));
   const filteredSetores = setores.filter((setor) => selectedSetores.includes(setor.id));
 
   return (
-    <div>
-      {/* Botão e Menu Dropdown de Regionais */}
-      <Button aria-controls="regionals-menu" aria-haspopup="true" onClick={handleDropdownClickRegionals}>
-        Regionais
-      </Button>
-      <Menu
-        id="regionals-menu"
-        anchorEl={anchorElRegionals}
-        keepMounted
-        open={Boolean(anchorElRegionals)}
-        onClose={handleDropdownCloseRegionals}
+    <Box
+      sx={{
+        display: isHomePage ? 'flex' : 'none', // Aplica display flex se for a home, caso contrário, display none
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '20px',
+      }}
+    >
+      <Box
+        sx={{
+          padding: '20px',
+          borderRadius: '12px',
+          position: 'relative',
+          backgroundColor: 'rgba(255, 255, 255, 0.5)', // Transparência de 50%
+          minWidth: '750px',
+          maxWidth: '750px',
+          zIndex: 1000,
+          boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+          marginTop: '10px',
+          marginBottom: '15px',
+        }}
       >
-        <FormGroup>
-          {regionals.map((regional) => (
-            <FormControlLabel
-              key={regional.id}
-              control={
-                <Checkbox
-                  checked={selectedRegionals.includes(regional.id)}
-                  onChange={() => handleSelectionChangeRegionals(regional.id)}
-                />
-              }
-              label={regional.titulo}
-            />
-          ))}
-        </FormGroup>
-      </Menu>
+        <h1 style={{ textAlign: 'center', color: '#4a4a4a', fontFamily: 'Arial, sans-serif' }}>Filtro</h1>
 
-      {/* Botão e Menu Dropdown de Setores */}
-      <Button aria-controls="setores-menu" aria-haspopup="true" onClick={handleDropdownClickSetores}>
-        Setores
-      </Button>
-      <Menu
-        id="setores-menu"
-        anchorEl={anchorElSetores}
-        keepMounted
-        open={Boolean(anchorElSetores)}
-        onClose={handleDropdownCloseSetores}
-      >
-        <FormGroup>
-          {setores.map((setor) => (
-            <FormControlLabel
-              key={setor.id}
-              control={
-                <Checkbox
-                  checked={selectedSetores.includes(setor.id)}
-                  onChange={() => handleSelectionChangeSetores(setor.id)}
-                />
-              }
-              label={setor.titulo}
-            />
-          ))}
-        </FormGroup>
-      </Menu>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '20px',
+            flexWrap: 'wrap',
+          }}
+        >
+          <Button
+            aria-controls="regionals-menu"
+            aria-haspopup="true"
+            onClick={handleDropdownClickRegionals}
+            variant="contained"
+            sx={{
+              backgroundColor: '#000000',
+              color: '#fff',
+              borderRadius: '8px',
+              padding: '10px 20px',
+              '&:hover': {
+                backgroundColor: '#970707',
+              },
+            }}
+          >
+            Regionais
+          </Button>
 
-      {/* Componente de Detalhes filtrado */}
-      <FilterComponentDetail regionais={filteredRegionals} setores={filteredSetores} />
-    </div>
+          <Button
+            aria-controls="setores-menu"
+            aria-haspopup="true"
+            onClick={handleDropdownClickSetores}
+            variant="contained"
+            sx={{
+              backgroundColor: '#000000',
+              color: '#fff',
+              borderRadius: '8px',
+              padding: '10px 20px',
+              '&:hover': {
+                backgroundColor: '#970707',
+              },
+            }}
+          >
+            Setores
+          </Button>
+        </Box>
+
+        <Menu
+          id="regionals-menu"
+          anchorEl={anchorElRegionals}
+          keepMounted
+          open={Boolean(anchorElRegionals)}
+          onClose={handleDropdownCloseRegionals}
+          sx={{
+            '& .MuiPaper-root': {
+              backgroundColor: '#ffffffaa',
+              boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+              backdropFilter: 'blur(8px)',
+              borderRadius: '12px',
+              padding: '10px',
+              marginTop: '5px', // Ajuste para reduzir o espaço entre o botão e o menu
+            },
+          }}
+        >
+          <FormGroup>
+            {regionals.map((regional) => (
+              <FormControlLabel
+                key={regional.id}
+                control={
+                  <Checkbox
+                    checked={selectedRegionals.includes(regional.id)}
+                    onChange={() => handleSelectionChangeRegionals(regional.id)}
+                    sx={{
+                      color: '#000000', // Cor padrão
+                      '&.Mui-checked': {
+                        color: '#000000', // Cor quando selecionado
+                      },
+                    }}
+                  />
+                }
+                label={regional.titulo}
+                sx={{
+                  color: '#333',
+                  '& .MuiCheckbox-root': {
+                    color: '#000000',
+                  },
+                }}
+              />
+            ))}
+          </FormGroup>
+        </Menu>
+
+        <Menu
+          id="setores-menu"
+          anchorEl={anchorElSetores}
+          keepMounted
+          open={Boolean(anchorElSetores)}
+          onClose={handleDropdownCloseSetores}
+          sx={{
+            '& .MuiPaper-root': {
+              backgroundColor: '#ffffffaa',
+              boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+              backdropFilter: 'blur(8px)',
+              borderRadius: '12px',
+              padding: '10px',
+              marginTop: '5px', // Ajuste para reduzir o espaço entre o botão e o menu
+            },
+          }}
+        >
+          <FormGroup>
+            {setores.map((setor) => (
+              <FormControlLabel
+                key={setor.id}
+                control={
+                  <Checkbox
+                    checked={selectedSetores.includes(setor.id)}
+                    onChange={() => handleSelectionChangeSetores(setor.id)}
+                    sx={{
+                      color: '#000000', // Cor padrão
+                      '&.Mui-checked': {
+                        color: '#000000', // Cor quando selecionado
+                      },
+                    }}
+                  />
+                }
+                label={setor.titulo}
+                sx={{
+                  color: '#333',
+                  '& .MuiCheckbox-root': {
+                    color: '#000000',
+                  },
+                }}
+              />
+            ))}
+          </FormGroup>
+        </Menu>
+
+        <Box sx={{ marginTop: '-10px' }}> {/* Margem negativa para subir os detalhes */}
+          <FilterComponentDetail regionais={filteredRegionals} setores={filteredSetores} />
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
