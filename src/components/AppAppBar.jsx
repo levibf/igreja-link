@@ -139,39 +139,14 @@ function AppAppBar({ mode, toggleColorMode }) {
                     <Button component={Link} to="/setores" color="inherit">Setores</Button>
                   </MenuItem>
                   <MenuItem>
-                    <Button component={Link} to="/section3" color="inherit">Administração Geral</Button>
+                    <Button component={Link} to="/admin" color="inherit">Administração Geral</Button>
                   </MenuItem>
                   <MenuItem>
-                    <Button component={Link} to="/section4" color="inherit">Tutoriais</Button>
+                    <Button component={Link} to="/tutoriais" color="inherit">Tutoriais</Button>
                   </MenuItem>
                   <MenuItem>
-                    <Button component={Link} to="/section4" color="inherit">Diversos</Button>
+                    <Button component={Link} to="/diversos" color="inherit">Diversos</Button>
                   </MenuItem>
-                  {/* <Divider />
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="contained"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign up
-                    </Button>
-                  </MenuItem>
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="outlined"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-in/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign in
-                    </Button>
-                  </MenuItem> */}
                 </Box>
               </Drawer>
             </Box>
