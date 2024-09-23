@@ -56,7 +56,7 @@ const RegionalDetalhes = ({ regionais }) => {
                                                 </Typography>
                                             </Box>
                                             <Link to={opcao.link} style={{ textDecoration: 'none', color: 'blue' }} target="_blank">
-                                                <Typography variant="body2">Ver mais</Typography>
+                                                <Typography variant="body2">Acessar</Typography>
                                             </Link>
                                         </CardContent>
                                     </Card>

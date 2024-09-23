@@ -96,7 +96,7 @@ const SetorDetalhes = () => {
                                         target="_blank"
                                     >
                                         <FaArrowRight style={{ marginRight: 8 }} />
-                                        <Typography variant="body2">Ver mais</Typography>
+                                        <Typography variant="body2">Acessar</Typography>
                                     </Link>
                                 )}
                             </CardContent>
