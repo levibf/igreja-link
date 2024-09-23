@@ -46,24 +46,24 @@ const RegionalDetalhes = () => {
                 {regional.opcoes.map((opcao, index) => (
                     <Grid item xs={12} sm={6} md={4} key={index}>
                         <Card>
-                            <CardContent>
-                                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <Box sx={{ marginRight: 1 }}>
-                                        {getIconForOption(opcao.titulo)}
+                            <Link to={opcao.link} style={{ textDecoration: 'none', color: 'black' }} target="_blank">
+                                <CardContent>
+                                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <Box sx={{ marginRight: 1 }}>
+                                            {getIconForOption(opcao.titulo)}
+                                        </Box>
+                                        <Typography variant="h6">
+                                            {opcao.titulo}
+                                        </Typography>
                                     </Box>
-                                    <Typography variant="h6">
-                                        {opcao.titulo}
-                                    </Typography>
-                                </Box>
-                                <Link to={opcao.link} style={{ textDecoration: 'none', color: 'blue' }} target="_blank">
-                                    <Typography variant="body2">Ver mais</Typography>
-                                </Link>
-                            </CardContent>
+                                    <Typography variant="body2" style={{color: 'black'}}>Acessar</Typography>
+                                </CardContent>
+                            </Link>
                         </Card>
                     </Grid>
                 ))}
             </Grid>
-        </Box>
+        </Box >
     );
 };
 
