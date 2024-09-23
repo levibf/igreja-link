@@ -236,7 +236,7 @@ export default function getLPTheme(mode) {
             borderRadius: '10px',
             boxShadow: `0 4px 16px ${alpha(gray[400], 0.2)}`,
             '& .Mui-selected': {
-              color: brand[500],
+              color: gray[900],
             },
             ...(theme.palette.mode === 'dark' && {
               '& .Mui-selected': {
@@ -317,10 +317,10 @@ export default function getLPTheme(mode) {
               },
             }),
             ...(ownerState.variant === 'text' && {
-              color: brand[500],
+              color: '#000000',
               '&:hover': {
-                backgroundColor: alpha(brand[300], 0.3),
-                borderColor: brand[200],
+                // backgroundColor: alpha(brand[300], 0.3),
+                // borderColor: brand[200],
               },
             }),
             ...(theme.palette.mode === 'dark' && {
