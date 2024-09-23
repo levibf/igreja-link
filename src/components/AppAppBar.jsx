@@ -168,7 +168,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   justifyContent: 'space-around',
                 }}
               >
-                {['/regionais', '/setores', '/admgeral', '/tutoriais', '/diversos'].map((path, index) => (
+                {['/regionais', '/setores', '/diversos'].map((path, index) => (
                   <Button
                     key={path}
                     component={Link}
@@ -177,7 +177,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       color: theme.palette.mode === 'dark' ? '#FFFFFF' : '#000000', // Botão branco no modo noturno
                     })}
                   >
-                    {['Regionais', 'Setores', 'Administração Geral', 'Tutoriais', 'Diversos'][index]}
+                    {['Regionais', 'Setores', 'Diversos'][index]}
                   </Button>
                 ))}
               </Box>
