@@ -37,7 +37,7 @@ function AppAppBar({ mode, toggleColorMode }) {
           bgcolor: '#d9cbbe',
           backgroundImage: 'none',
           // mt: 2,
-          
+
 
 
         }}
@@ -51,11 +51,11 @@ function AppAppBar({ mode, toggleColorMode }) {
               justifyContent: 'space-between',
               flexShrink: 0,
               // borderRadius: '999px',
-              
+
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
-            
-              
+
+
               // border: '1px solid',
               // borderColor: 'divider',
               // boxShadow:
@@ -73,8 +73,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{
                     width: { xs: 25, md: 35 },
                     height: { xs: 20, md: 35 },
-                    
-                    
+
+
 
                   }}
                 />
@@ -88,8 +88,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 justifyContent: 'center',
                 ml: '-18px',
                 px: 0,
-                
-                
+
+
 
               }}
             >
@@ -115,7 +115,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     p: 2,
                     backgroundColor: 'background.paper',
                     flexGrow: 1,
-                    
+
 
 
                   }}
@@ -126,7 +126,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       flexDirection: 'column',
                       alignItems: 'end',
                       flexGrow: 1,
-                      
+
 
                     }}
                   >
@@ -164,7 +164,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               margin: '7px',
               maxWidth: '1000px',
               marginLeft: 10,
-              
+
             }}
           >
             <Container maxWidth="lg">
@@ -172,7 +172,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-around',
-                  
+
                 }}
               >
                 {['/regionais', '/setores', '/diversos'].map((path, index) => (
