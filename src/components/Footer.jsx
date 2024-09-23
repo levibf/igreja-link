@@ -40,7 +40,7 @@ export default function Footer() {
           <IconButton
             href="https://youtube.com/admontesetv"
             aria-label="YouTube"
-            sx={{ alignSelf: 'center' }}
+            sx={{ alignSelf: 'center', marginRight: '1' }}
             target='_blank'
             title='Youtube'
           >
@@ -49,7 +49,7 @@ export default function Footer() {
           <IconButton
             href="https://www.instagram.com/admontese_oficial"
             aria-label="Instagram"
-            sx={{ alignSelf: 'center' }}
+            sx={{ alignSelf: 'center', marginRight: '1' }}
             target='_blank'
             title='Instagram'
           >
@@ -58,7 +58,7 @@ export default function Footer() {
           <IconButton
             href="https://www.facebook.com/admonteseoficial"
             aria-label="Facebook"
-            sx={{ alignSelf: 'center' }}
+            sx={{ alignSelf: 'center', marginRight: '1' }}
             target='_blank'
             title='Facebook'
           >
@@ -67,7 +67,7 @@ export default function Footer() {
           <IconButton
             href="https://api.whatsapp.com/send/?phone=558582139659"
             aria-label="WhatsApp"
-            sx={{ alignSelf: 'center' }}
+            sx={{ alignSelf: 'center', marginRight: '1' }}
             target='_blank'
             title='Whatsapp'
           >
@@ -76,7 +76,7 @@ export default function Footer() {
           <IconButton
             href="https://www.google.com/maps/place/Igreja+Evang%C3%A9lica+Assembl%C3%A9ia+de+Deus+-+Montese/@-3.7703292,-38.5544027,1125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x7c74eb696052b7b:0x8d55237fcf693e58!8m2!3d-3.7703292!4d-38.5518278!16s%2Fg%2F1t_hz642?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
             aria-label="WhatsApp"
-            sx={{ alignSelf: 'center' }}
+            sx={{ alignSelf: 'center', marginRight: '1' }}
             target='_blank'
             title='Localizacao'
           >
