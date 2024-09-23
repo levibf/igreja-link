@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Checkbox, FormControlLabel, Button, FormGroup, Menu, MenuItem } from '@mui/material';
-import RegionalDetalhes from './Regional/RegionalDetalhes';
+import FilterComponentDetail from './FilterComponentDetail';
 import regionals from './regionais'; // Supondo que o array de regionais seja importado
 
 const FilterComponent = () => {
@@ -58,7 +58,7 @@ const FilterComponent = () => {
       </Menu>
 
       {/* Passa as regionais filtradas para o componente RegionalDetalhes */}
-      <RegionalDetalhes regionais={filteredRegionals} />
+      <FilterComponentDetail regionais={filteredRegionals} />
     </div>
   );
 };
