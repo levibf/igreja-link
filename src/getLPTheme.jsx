@@ -298,7 +298,7 @@ export default function getLPTheme(mode) {
               ownerState.color === 'primary' && {
               color: '#000000',
               background: brand[500],
-              backgroundImage: `linear-gradient(to bottom, #c5b29f, #dbb48d)`,
+              // backgroundImage: `linear-gradient(to bottom, #a0a0a0, #dbb48d)`,
               boxShadow: `inset 0 1px ${alpha(brand[300], 0.4)}`,
               outline: `1px none ${brand[700]}`,
               '&:hover': {
