@@ -32,7 +32,6 @@ const FilterComponentDetail = ({ regionais, setores }) => {
             sx={{
                 textAlign: 'center',
                 padding: '2rem',
-                marginTop: '7rem'
             }}
         >
             {regionais.map((regional) => (
