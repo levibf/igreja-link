@@ -17,14 +17,20 @@ import SearchBar from './Search/SearchBar';
 import ToggleColorMode from './ToggleColorMode';
 import { Menu } from '@mui/material';
 import { useState } from 'react';
+import regionais from './regionais';
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
   const [anchorElRegionais, setAnchorElRegionais] = useState(null);
   const [anchorElSetores, setAnchorElSetores] = useState(null);
+  const [anchorElRegionaisDrawer, setAnchorElRegionaisDrawer] = useState(null);
 
   // Timer para evitar o fechamento imediato dos menus
   let closeTimer = null;
+
+  const toggleDrawer = (open) => () => {
+    setOpen(open);
+  };
 
   const handleMouseEnter = (setAnchorEl) => (event) => {
     clearTimeout(closeTimer); // Cancela o fechamento quando o mouse entra
@@ -42,8 +48,14 @@ function AppAppBar({ mode, toggleColorMode }) {
     clearTimeout(closeTimer); // Cancela o timer se o mouse entrar no menu
   };
 
-  const toggleDrawer = (open) => () => {
-    setOpen(open);
+
+  // Controla o menu de "Filtrar por Regionais" no Drawer
+  const handleRegionaisClick = (event) => {
+    setAnchorElRegionaisDrawer(event.currentTarget);
+  };
+
+  const handleRegionaisClose = () => {
+    setAnchorElRegionaisDrawer(null);
   };
 
   return (
@@ -129,9 +141,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                     p: 2,
                     backgroundColor: 'background.paper',
                     flexGrow: 1,
-
-
-
                   }}
                 >
                   <Box
@@ -140,8 +149,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                       flexDirection: 'column',
                       alignItems: 'end',
                       flexGrow: 1,
-
-
                     }}
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
@@ -162,7 +169,80 @@ function AppAppBar({ mode, toggleColorMode }) {
                     <Button component={Link} to="/diversos" color="inherit">Diversos</Button>
                   </MenuItem>
                   <Divider />
-                  <span>Filtros</span>
+                  {/* Botão "Filtrar por Regionais" */}
+                  {/* <MenuItem>
+                    <Button onClick={handleRegionaisClick} color="inherit">
+                      Filtrar por Regionais
+                    </Button>
+                    <Menu
+                      anchorEl={anchorElRegionaisDrawer}
+                      open={Boolean(anchorElRegionaisDrawer)}
+                      onClose={handleRegionaisClose}
+                    >
+                      <MenuItem component={Link} to="/regionais/r01" onClick={handleRegionaisClose}>
+                        Regional 1 - Exemplo 1
+                      </MenuItem>
+                      <MenuItem component={Link} to="/regionais/r02" onClick={handleRegionaisClose}>
+                        Regional 2 - Exemplo 2
+                      </MenuItem>
+                    </Menu>
+                  </MenuItem> */}
+                  <MenuItem>
+                    <Button onClick={handleRegionaisClick} color="inherit">
+                      Filtrar por Regionais
+                    </Button>
+                    <Menu
+                      anchorEl={anchorElRegionaisDrawer}
+                      open={Boolean(anchorElRegionaisDrawer)}
+                      onClose={handleRegionaisClose}
+                    >
+                      {/* Fazendo o mapeamento das regionais */}
+                      {regionais.map((regional) => (
+                        <MenuItem
+                          key={regional.id}
+                          component={Link}
+                          to={`/${regional.link}`}
+                          onClick={handleRegionaisClose}
+                        >
+                          {regional.titulo}
+                        </MenuItem>
+                      ))}
+                    </Menu>
+                  </MenuItem>
+                  {/* Botão de Setores com dropdown */}
+                  <MenuItem>
+                    {/* <span
+                    className="SpanColor"
+                    onMouseEnter={handleMouseEnter(setAnchorElSetores)}
+                    onMouseLeave={handleMouseLeave(setAnchorElSetores)}
+                    color="black"
+                  >
+                    Setores
+                  </span> */}
+                    <Button
+                      color="inherit"
+                      onMouseEnter={handleMouseEnter(setAnchorElSetores)}
+                      onMouseLeave={handleMouseLeave(setAnchorElSetores)}
+                    >
+                      Filtrar por Setores
+                    </Button>
+                    <Menu
+                      anchorEl={anchorElSetores}
+                      open={Boolean(anchorElSetores)}
+                      onClose={handleMouseLeave(setAnchorElSetores)}
+                      MenuListProps={{
+                        onMouseEnter: handleMenuEnter,
+                        onMouseLeave: handleMouseLeave(setAnchorElSetores),
+                      }}
+                    >
+                      {/* <MenuItem component={Link} to="/setores/s01">
+                      Setor 1 - Administração
+                    </MenuItem>
+                    <MenuItem component={Link} to="/setores/s02">
+                      Setor 2 - Logística
+                    </MenuItem> */}
+                    </Menu>
+                  </MenuItem>
                 </Box>
               </Drawer>
             </Box>
@@ -211,7 +291,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Todas as Regionais
                   </MenuItem>
                   <MenuItem component={Link} to="/regionais/r02">
-                    Regional 2 - Jardim
+                    Regional 1 - Fortaleza
                   </MenuItem>
                   <MenuItem component={Link} to="/regionais/r02">
                     Regional 2 - Jardim
@@ -389,8 +469,8 @@ function AppAppBar({ mode, toggleColorMode }) {
             </Container>
           </Box>
         </Container>
-      </AppBar>
-    </div>
+      </AppBar >
+    </div >
   );
 }
 
