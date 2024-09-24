@@ -70,7 +70,6 @@ const SetorDetalhes = () => {
                                                     style={{
                                                         textDecoration: 'none',
                                                         color: '#1976d2',
-                                                        fontWeight: 'bold',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                     }}
@@ -88,7 +87,6 @@ const SetorDetalhes = () => {
                                         style={{
                                             textDecoration: 'none',
                                             color: '#1976d2',
-                                            fontWeight: 'bold',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center',
