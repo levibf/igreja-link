@@ -161,6 +161,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <MenuItem>
                     <Button component={Link} to="/diversos" color="inherit">Diversos</Button>
                   </MenuItem>
+                  <Divider />
+                  <span>Filtros</span>
                 </Box>
               </Drawer>
             </Box>

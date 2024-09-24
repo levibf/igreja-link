@@ -48,7 +48,7 @@ const FilterComponent = () => {
   return (
     <Box
       sx={{
-        display: isHomePage ? 'flex' : 'none', // Aplica display flex se for a home, caso contrário, display none
+        display: isHomePage ? { xs: 'none', sm: 'flex' } : 'none', // Aplica display flex se for a home, caso contrário, display none
         flexDirection: 'column',
         alignItems: 'center',
         marginTop: '20px',
