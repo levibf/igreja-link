@@ -46,170 +46,172 @@ const FilterComponent = () => {
   const filteredSetores = setores.filter((setor) => selectedSetores.includes(setor.id));
 
   return (
-    <Box
-      sx={{
-        display: isHomePage ? { xs: 'none', sm: 'flex' } : 'none', // Aplica display flex se for a home, caso contrário, display none
-        flexDirection: 'column',
-        alignItems: 'center',
-        marginTop: '20px',
-      }}
-    >
+    <>
       <Box
         sx={{
-          padding: '20px',
-          borderRadius: '12px',
-          position: 'relative',
-          backgroundColor: 'rgba(255, 255, 255, 0.5)', // Transparência de 50%
-          minWidth: '750px',
-          maxWidth: '750px',
-          zIndex: 1000,
-          boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-          marginTop: '10px',
-          marginBottom: '15px',
+          display: isHomePage ? { xs: 'none', sm: 'flex' } : 'none', // Aplica display flex se for a home, caso contrário, display none
+          flexDirection: 'column',
+          alignItems: 'start',
+          marginTop: '-240px',
         }}
       >
-        <h1 style={{ textAlign: 'center', color: '#4a4a4a', fontFamily: 'Arial, sans-serif' }}>Filtro</h1>
-
         <Box
           sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '20px',
-            flexWrap: 'wrap',
+            padding: '20px',
+            borderRadius: '12px',
+            position: 'relative',
+            backgroundColor: 'rgba(255, 255, 255, 0.5)', // Transparência de 50%
+            minWidth: '700px',
+            maxWidth: '700px',
+            zIndex: 1000,
+            boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+            marginTop: '0px',
+            marginBottom: '0px',
           }}
         >
-          <Button
-            aria-controls="regionals-menu"
-            aria-haspopup="true"
-            onClick={handleDropdownClickRegionals}
-            variant="contained"
+          <h1 style={{ textAlign: 'center', color: '#4a4a4a', fontFamily: 'Arial, sans-serif' }}>Filtros</h1>
+
+          <Box
             sx={{
-              backgroundColor: '#000000',
-              color: '#fff',
-              borderRadius: '8px',
-              padding: '10px 20px',
-              '&:hover': {
-                backgroundColor: '#970707',
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '20px',
+              flexWrap: 'wrap',
+            }}
+          >
+            <Button
+              aria-controls="regionals-menu"
+              aria-haspopup="true"
+              onClick={handleDropdownClickRegionals}
+              variant="contained"
+              sx={{
+                backgroundColor: '#000000',
+                color: '#fff',
+                borderRadius: '8px',
+                padding: '10px 20px',
+                '&:hover': {
+                  backgroundColor: '#970707',
+                },
+              }}
+            >
+              Regionais
+            </Button>
+
+            <Button
+              aria-controls="setores-menu"
+              aria-haspopup="true"
+              onClick={handleDropdownClickSetores}
+              variant="contained"
+              sx={{
+                backgroundColor: '#000000',
+                color: '#fff',
+                borderRadius: '8px',
+                padding: '10px 20px',
+                '&:hover': {
+                  backgroundColor: '#970707',
+                },
+              }}
+            >
+              Setores
+            </Button>
+          </Box>
+
+          <Menu
+            id="regionals-menu"
+            anchorEl={anchorElRegionals}
+            keepMounted
+            open={Boolean(anchorElRegionals)}
+            onClose={handleDropdownCloseRegionals}
+            sx={{
+              '& .MuiPaper-root': {
+                backgroundColor: '#ffffffaa',
+                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+                backdropFilter: 'blur(8px)',
+                borderRadius: '12px',
+                padding: '10px',
+                marginTop: '5px', // Ajuste para reduzir o espaço entre o botão e o menu
               },
             }}
           >
-            Regionais
-          </Button>
+            <FormGroup>
+              {regionals.map((regional) => (
+                <FormControlLabel
+                  key={regional.id}
+                  control={
+                    <Checkbox
+                      checked={selectedRegionals.includes(regional.id)}
+                      onChange={() => handleSelectionChangeRegionals(regional.id)}
+                      sx={{
+                        color: '#000000', // Cor padrão
+                        '&.Mui-checked': {
+                          color: '#000000', // Cor quando selecionado
+                        },
+                      }}
+                    />
+                  }
+                  label={regional.titulo}
+                  sx={{
+                    color: '#333',
+                    '& .MuiCheckbox-root': {
+                      color: '#000000',
+                    },
+                  }}
+                />
+              ))}
+            </FormGroup>
+          </Menu>
 
-          <Button
-            aria-controls="setores-menu"
-            aria-haspopup="true"
-            onClick={handleDropdownClickSetores}
-            variant="contained"
+          <Menu
+            id="setores-menu"
+            anchorEl={anchorElSetores}
+            keepMounted
+            open={Boolean(anchorElSetores)}
+            onClose={handleDropdownCloseSetores}
             sx={{
-              backgroundColor: '#000000',
-              color: '#fff',
-              borderRadius: '8px',
-              padding: '10px 20px',
-              '&:hover': {
-                backgroundColor: '#970707',
+              '& .MuiPaper-root': {
+                backgroundColor: '#ffffffaa',
+                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+                backdropFilter: 'blur(8px)',
+                borderRadius: '12px',
+                padding: '10px',
+                marginTop: '5px', // Ajuste para reduzir o espaço entre o botão e o menu
               },
             }}
           >
-            Setores
-          </Button>
-        </Box>
+            <FormGroup>
+              {setores.map((setor) => (
+                <FormControlLabel
+                  key={setor.id}
+                  control={
+                    <Checkbox
+                      checked={selectedSetores.includes(setor.id)}
+                      onChange={() => handleSelectionChangeSetores(setor.id)}
+                      sx={{
+                        color: '#000000', // Cor padrão
+                        '&.Mui-checked': {
+                          color: '#000000', // Cor quando selecionado
+                        },
+                      }}
+                    />
+                  }
+                  label={setor.titulo}
+                  sx={{
+                    color: '#333',
+                    '& .MuiCheckbox-root': {
+                      color: '#000000',
+                    },
+                  }}
+                />
+              ))}
+            </FormGroup>
+          </Menu>
 
-        <Menu
-          id="regionals-menu"
-          anchorEl={anchorElRegionals}
-          keepMounted
-          open={Boolean(anchorElRegionals)}
-          onClose={handleDropdownCloseRegionals}
-          sx={{
-            '& .MuiPaper-root': {
-              backgroundColor: '#ffffffaa',
-              boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-              backdropFilter: 'blur(8px)',
-              borderRadius: '12px',
-              padding: '10px',
-              marginTop: '5px', // Ajuste para reduzir o espaço entre o botão e o menu
-            },
-          }}
-        >
-          <FormGroup>
-            {regionals.map((regional) => (
-              <FormControlLabel
-                key={regional.id}
-                control={
-                  <Checkbox
-                    checked={selectedRegionals.includes(regional.id)}
-                    onChange={() => handleSelectionChangeRegionals(regional.id)}
-                    sx={{
-                      color: '#000000', // Cor padrão
-                      '&.Mui-checked': {
-                        color: '#000000', // Cor quando selecionado
-                      },
-                    }}
-                  />
-                }
-                label={regional.titulo}
-                sx={{
-                  color: '#333',
-                  '& .MuiCheckbox-root': {
-                    color: '#000000',
-                  },
-                }}
-              />
-            ))}
-          </FormGroup>
-        </Menu>
-
-        <Menu
-          id="setores-menu"
-          anchorEl={anchorElSetores}
-          keepMounted
-          open={Boolean(anchorElSetores)}
-          onClose={handleDropdownCloseSetores}
-          sx={{
-            '& .MuiPaper-root': {
-              backgroundColor: '#ffffffaa',
-              boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-              backdropFilter: 'blur(8px)',
-              borderRadius: '12px',
-              padding: '10px',
-              marginTop: '5px', // Ajuste para reduzir o espaço entre o botão e o menu
-            },
-          }}
-        >
-          <FormGroup>
-            {setores.map((setor) => (
-              <FormControlLabel
-                key={setor.id}
-                control={
-                  <Checkbox
-                    checked={selectedSetores.includes(setor.id)}
-                    onChange={() => handleSelectionChangeSetores(setor.id)}
-                    sx={{
-                      color: '#000000', // Cor padrão
-                      '&.Mui-checked': {
-                        color: '#000000', // Cor quando selecionado
-                      },
-                    }}
-                  />
-                }
-                label={setor.titulo}
-                sx={{
-                  color: '#333',
-                  '& .MuiCheckbox-root': {
-                    color: '#000000',
-                  },
-                }}
-              />
-            ))}
-          </FormGroup>
-        </Menu>
-
-        <Box sx={{ marginTop: '-10px' }}> {/* Margem negativa para subir os detalhes */}
-          <FilterComponentDetail regionais={filteredRegionals} setores={filteredSetores} />
         </Box>
       </Box>
-    </Box>
+      <Box className='ResultadoFiltro'> {/* Margem negativa para subir os detalhes */}
+        <FilterComponentDetail regionais={filteredRegionals} setores={filteredSetores} />
+      </Box>
+    </>
   );
 };
 
