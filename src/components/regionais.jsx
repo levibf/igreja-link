@@ -16,6 +16,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1IGyYTKZz9MYCWSwpHNemlCD6bmkYSl4mwhBXktLnTJw"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "https://docs.google.com/spreadsheets/d/12ZrNdnctiMwBB9Covdti6jDGbqTE6hmhv5YN9-KYNIg"
             }
         ],
         grupo: 'Regional',
@@ -40,7 +44,7 @@ const regionals = [
             },
             {
                 titulo: "Ata da Reunião",
-                link: "http://docs.google.com/spreadsheets/d/1RksW6z9I5dm6MY8pbma4j9y9xJYACGTOFCdZS8nnvSA"
+                link: "http://docs.google.com/spreadsheets/d/1rCZ2yodvYimoR6pUc_jDZxcRM8T29fhdm3wFjj0HxrU"
             },
         ]
     },
@@ -61,6 +65,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1JLdAZfX5SZvK8Tv-J1NwAUAhPuFfmN9GWiwnrfhJ3XM"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1ryNAE4zENXtPUeXtsonKNv1tnOmnC5ysKX-2LC7cHzI"
             }
         ]
     },
@@ -81,6 +89,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1EsXIvjyLAMEl2aXeOuPEgYcdVJDV0tJjvPhA5g0lZOE"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/15a9w50_2VagzadFcj4fgYR4pKy615HfnNbrZrbHtR-s"
             }
         ]
     },
@@ -101,6 +113,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/16yZARXFE4Ns5kpKS6kbDUa9c35NB1RqdCEnBidC_cY4"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1SHEg_EPsAyJg1HO8_IUqWEoT6dWQHrUtfgceTjXY1io"
             }
         ]
     },
@@ -121,6 +137,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1ZIqSDwnPaNBal6mV3Frbo1e1EJZC8HTXcUIjgJ9-FnU"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1ZBiQ9sVNgz5IDrDyFcwz3nQ5btF9fdhy0iFEve2ySJY"
             }
         ]
     },
@@ -141,6 +161,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/19uhmHxTvIrOPD8Q8T_l_0NCvs9kqGN0Ec1x0stkSSP4"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1mUXynikNIeSfN5pCnP0dvEvW4Pfz8CchrFU63t6Q_d8"
             }
         ]
     },
@@ -161,6 +185,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1KPcCRFTLfLTeWcpoyfppYVxW-4137fjrs1kriwsPYZA"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/121LrW96hPTkUIEQZ9QOwaQZZYJ4cnxhosKX6Q7ZFU_s"
             }
         ]
     },
@@ -181,6 +209,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1GNfbJoOML5ZIqPny8M7Jfzfi-ZyLso6-63CLP9H8J9E"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1QYDSJonFGE1fS-vL7glNa1vbsmwPnhowZjYaZPYWfEQ"
             }
         ]
     },
@@ -201,6 +233,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1qHEGo6wvWdKHsbrx5fNu-ZgBXlVBEdyYhdZY_9_FscI"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1VBHjAxDdzjBtatDlBGQUYONknkc0mVSIpr2_zoaGbK4"
             }
         ]
     },
@@ -221,6 +257,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1ug2S06SEeBvL5I0kZht1QRnBh7ZNtdxL1vWl57X9eZA"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1EjFjwd_vOr32V0rJHiIUnw_6YFunFDA6vkKlqDTyzdg"
             }
         ]
     },
@@ -241,6 +281,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1boEWseJQN1Xx74kSvEmnc31lP5Wyed4Z0IjO1B98IaM"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1wj21_NTYSFbd5vDPsb0uWVnlvSl4CT_4XW8WW8U41pk"
             }
         ]
     },
@@ -261,6 +305,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1e1Ei3z3xvPKyN3nkLGJ67m0Nq74SXjExfNDEANZj9fc"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1Jda-cAbCOKr4EFrF3BWpfua_Sjmi29SSbAYbpAiJlEc"
             }
         ]
     },
@@ -281,6 +329,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1UkvvTz3G3WaLwTp4lult2m-ClkpLAuQ1KD4FDCplNBU"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1OPI5e1bK819H3Oj-GT-ubqvmbPeBLq6sCxNOiyXSslw"
             }
         ]
     },
@@ -301,6 +353,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1lyWY4_1sxRL-RV4jmVIfcvrMSRKO3dt5KLX_gTFiS7M"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "https://docs.google.com/spreadsheets/d/1IGyYTKZz9MYCWSwpHNemlCD6bmkYSl4mwhBXktLnTJw"
             }
         ]
     },
@@ -321,6 +377,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1h-qwDRI1IioTtRkB5jUAnMO3xBK7aNDzQvcnitJx52A"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1Gw_U0Ly2sotzhwfrZXqpVGIgcWCArcCzqQ3hJfgrWrw"
             }
         ]
     },
@@ -341,6 +401,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1NmKfdrlqN-G-ueBtng0lJKXLo0BmDOLz7nugKUjU0ks"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1QtiR6tYro_KgBiBAfaTLWiWscqGvtc0IRS-gYSMXrFE"
             }
         ]
     },
@@ -361,6 +425,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "http://docs.google.com/spreadsheets/d/1nSV5q2belv1vk4s8ag-VAPb8hIUHMCOV561nAIZJs6k"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1VDJYCC_2YiUdgjcPS9VAPImVyo3MHWXsQidAk_TnXOw"
             }
         ]
     },
@@ -381,6 +449,10 @@ const regionals = [
             {
                 titulo: "Relatório Patrimonial",
                 link: "regionais/r19/patrimonio"
+            },
+            {
+                titulo: "Ata de Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1e9bA6vNnxGLRCzLYSmGpSpACgYPvEVbl8UXa4un1jeE"
             }
         ]
     }
