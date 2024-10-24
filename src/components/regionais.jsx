@@ -46,7 +46,8 @@ const regionals = [
                 titulo: "Ata da Reunião",
                 link: "http://docs.google.com/spreadsheets/d/1rCZ2yodvYimoR6pUc_jDZxcRM8T29fhdm3wFjj0HxrU"
             },
-        ]
+        ],
+        grupo: 'Regional',
     },
     {
         id: "r03",

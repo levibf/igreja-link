@@ -290,7 +290,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <MenuItem component={Link} to="/regionais">
                     Todas as Regionais
                   </MenuItem>
-                  <MenuItem component={Link} to="/regionais/r02">
+                  <MenuItem component={Link} to="/regionais/r01">
                     Regional 1 - Fortaleza
                   </MenuItem>
                   <MenuItem component={Link} to="/regionais/r02">
