@@ -7,7 +7,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1ozJK3KiNKn-YfUXMPJwVQ2lFCT1e6b7I05fOmim7Gj0"
+                link: "https://docs.google.com/spreadsheets/d/1V2IAPsBWz6x1-rxaBC4x0xjkE_s-YwLrmDfPwRJ1BmY"
             },
             {
                 titulo: "Controle de Membros",
@@ -22,22 +22,26 @@ const regionals = [
     },
     {
         id: "r02",
-        titulo: "Regional 02 - Jardim",
+        titulo: "Regional 02 - Cariri",
         link: "regionais/r02",
         imagem: "https://lh6.googleusercontent.com/37Rl7nOuYeB5U6JhlqB1uU0FeKcajeRs5Z2OhN12DHEY0Ixn7AjM-tplQTgJ2wsSzGsVNGE5P39qF4hNH_ZJl0NSHPOuK7Skrds6_1uFnYlXKYjCumiG29qAsII1xIWBrA=w1280",
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1OlyV1QjEV-4Bdj7lBIRZT_J_vsG_YbnFF3shpq96PzI"
+                link: "https://docs.google.com/spreadsheets/d/1FGqwbYStoGIzefZn2q_dgd21-ftzWdPHY3dn89xNPpw"
             },
             {
                 titulo: "Controle de Membros",
-                link: "https://docs.google.com/spreadsheets/d/1nSyfVYN_OZKWdrAipnIYiW7S6gaJ8xO10MzYg_nnqRE"
+                link: "https://docs.google.com/spreadsheets/d/12ZrNdnctiMwBB9Covdti6jDGbqTE6hmhv5YN9-KYNIg"
             },
             {
                 titulo: "Relatório Patrimonial",
                 link: "https://docs.google.com/spreadsheets/d/1ERMSRscqoT69sSvI6lUHN-ns0paeWYBKBc3Qp0Ex1WE"
-            }
+            },
+            {
+                titulo: "Ata da Reunião",
+                link: "http://docs.google.com/spreadsheets/d/1RksW6z9I5dm6MY8pbma4j9y9xJYACGTOFCdZS8nnvSA"
+            },
         ]
     },
     {
@@ -48,7 +52,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1wDdH_XKymmi3wTjpbxWavX12A4Z8ewap88-oLEyWnEs"
+                link: "https://docs.google.com/spreadsheets/d/1OhI6Cht6LN9L80PdsVBIMcHl42Bs1mlWchhxaIez4mc"
             },
             {
                 titulo: "Controle de Membros",
@@ -68,7 +72,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1tajMeuyreONk7tyCHPvSqF1mWTCoYskuzUM9uJZX_UQ"
+                link: "https://docs.google.com/spreadsheets/d/1Z0BrFTLfHIvoYwqC7eGDnQWbGEV8n3m08ItsS-sF34o"
             },
             {
                 titulo: "Controle de Membros",
@@ -88,7 +92,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1Xop3qlwNszTalRme0rZAW7QMreXHpd5Q9Xl8gDkljhA"
+                link: "https://docs.google.com/spreadsheets/d/1hpA6vKlEJvUurS1leJyXsxOYXqAQzeGlPPC53sBZ2Yo"
             },
             {
                 titulo: "Controle de Membros",
@@ -108,7 +112,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1_44yHH-GNPhKPIeJSOqp3Klrq9BBu9xLYZL2LTIi0qk"
+                link: "https://docs.google.com/spreadsheets/d/1kyHHpWNaAsOV_aX3D-L434bh33mMAE4oB64jgPEaL30"
             },
             {
                 titulo: "Controle de Membros",
@@ -128,7 +132,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1bIRWK8Kly_r2lyxsAE1aNa3H2OiHRANQKpz0LWEA2gI"
+                link: "https://docs.google.com/spreadsheets/d/1cGkN0mjtZvPwrZaoSk5MRH3uaG8DMThGVQ-arJGvrTU"
             },
             {
                 titulo: "Controle de Membros",
@@ -148,7 +152,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/129KttHATzmwubxcs4I3WpQegu4VenlOsjVEr74uWWSQ"
+                link: "https://docs.google.com/spreadsheets/d/1ndke3K__oUE1SsvH8e8uSWYe-P3FMGHFbGS9mIxKbGw"
             },
             {
                 titulo: "Controle de Membros",
@@ -168,7 +172,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1g-Mf0Ifxx8uCUJr9oVTaCg-HqElcX_pdIc24YDQyUM4"
+                link: "https://docs.google.com/spreadsheets/d/1pIKKQ19ns7bk40_7_bZoEwkR9pJTTw_3Z3nPJFGIXwo"
             },
             {
                 titulo: "Controle de Membros",
@@ -188,7 +192,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1pJhGRWxRQ9m0RjSwIfceQjpbrn9tEldZk7wR6bnfRBs"
+                link: "https://docs.google.com/spreadsheets/d/1r1aAtYmZ21VZS-sPIZniV84obayA3DZjxHrwVRdgroM"
             },
             {
                 titulo: "Controle de Membros",
@@ -208,7 +212,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1Ln3RqZCP7NG23jOHY9QjzPJLHeVx2cczbbq4EqW_XXw"
+                link: "https://docs.google.com/spreadsheets/d/1OH1E_yftGDgZW997i1Tlw3O2VABwJWvXknS-0hfkuAs"
             },
             {
                 titulo: "Controle de Membros",
@@ -222,13 +226,13 @@ const regionals = [
     },
     {
         id: "r12",
-        titulo: "Regional 12 - Pentecostes",
+        titulo: "Regional 12 - Pentecoste",
         link: "regionais/r12",
         imagem: "https://lh3.googleusercontent.com/D1o6XJ6XEtH1vA_jw1lnA4VKrDPVnP6DTzM-QNzKFaZKdzTE66zZmy-JIaAzUilLG1dKYczpJ4yMa7Q6JPSlMv9z6qCQ9cxNlbkg1qS_ayRUJm-7v5bdHMo3X4V_VzvIoQ=w1280",
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1aSeuT8L8VB3unsFOfpQZEjspApBvfOKm08V5xrvFvmk"
+                link: "https://docs.google.com/spreadsheets/d/1_rAqUJbHGtoufp4c10ABlEsuMi3dfExsDRZDmcDawF0"
             },
             {
                 titulo: "Controle de Membros",
@@ -242,13 +246,13 @@ const regionals = [
     },
     {
         id: "r13",
-        titulo: "Regional 13 - Independências",
+        titulo: "Regional 13 - Independência",
         link: "regionais/r13",
         imagem: "https://lh3.googleusercontent.com/p6vBwU6D6T_NPp64Pm6rgReBb9g4_b38JTRKjoDQ_U5ltlW9jPnZOEY4TmULcbwVemWyqPxhbJ2VUKuY1bdOzy6lvZJpPQ_5F6GrvNf5EZ1Whp1cUdrzEGpke8DZb5oxJQ=w1280",
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1SOHdhm_qUq-BxNUvJ07GaJwKUsDY2F-EZHrRnVrQR2E"
+                link: "https://docs.google.com/spreadsheets/d/1g5OG-YEUFwTCkBst0hvIVM2oUU8KgwuZ-o9V-b5muu8"
             },
             {
                 titulo: "Controle de Membros",
@@ -268,7 +272,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1KIuSWpSbu-12tjl2EHV7-2gxMGEgZBzm2KE-l1Vi2s8"
+                link: "https://docs.google.com/spreadsheets/d/1rqXEJw4NMV4-ktZDU0xII8e5t1WZ0aZlR4yGAIYixpQ"
             },
             {
                 titulo: "Controle de Membros",
@@ -308,7 +312,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1jvymGCED5_n0s2cB8FWloEJngzFvlxgaPPUDUDQ1nVs"
+                link: "https://docs.google.com/spreadsheets/d/1rJjFpS1VCs-11VD8h25q4asVbtb32jw49zvcED7BwqY"
             },
             {
                 titulo: "Controle de Membros",
@@ -328,7 +332,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1TuI2qOZLprzVwO8yZOXL_4JRUVS9zgWLsn3RCD6nOek"
+                link: "https://docs.google.com/spreadsheets/d/1Lx02UFdHCXX5lVKZbqPhRvujsAzyV1VRHaos-MNtvr0"
             },
             {
                 titulo: "Controle de Membros",
@@ -348,7 +352,7 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "https://docs.google.com/spreadsheets/d/1q4yVRhTbmgmM3rBQQx57v8bauBeNLuQoNwdaEi0QFLI"
+                link: "https://docs.google.com/spreadsheets/d/1cgFMRb3n3sSgl90ncfD0NdbUqet2hxdN7SEwxmCHi-M"
             },
             {
                 titulo: "Controle de Membros",
@@ -368,11 +372,11 @@ const regionals = [
         opcoes: [
             {
                 titulo: "Tesouraria Regional",
-                link: "regionais/r19/tesouraria"
+                link: "https://docs.google.com/spreadsheets/d/1PYNv-NKUvP5bO4raA7j4h7fBhnOoKIsDQxsK-M2uVxA"
             },
             {
                 titulo: "Controle de Membros",
-                link: "regionais/r19/membros"
+                link: "https://docs.google.com/spreadsheets/d/15apv1BoJcLSU76VUiHnuuWTvtmaGq4BMlaYd0T5hI3s"
             },
             {
                 titulo: "Relatório Patrimonial",

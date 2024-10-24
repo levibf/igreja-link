@@ -21,10 +21,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1nsUFFKHhD15r4QRcu76vvetsd6HKYgmRhkHlFdAzYpE"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1WOTqE2M3GqEpdmtHNA2sU4lt_G0MA_3QvPFFNgUIwOc"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1WOTqE2M3GqEpdmtHNA2sU4lt_G0MA_3QvPFFNgUIwOc"
+          // }
         ]
       },
       {
@@ -55,10 +55,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1kDOYZwZ7VSTknAEb5KsDF9CxAVsQEw6fnMkEFGZmZTI"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/14WucBYdtANKunDYMrVqegOeJRXShk1PqQU1UzTaKsG4"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/14WucBYdtANKunDYMrVqegOeJRXShk1PqQU1UzTaKsG4"
+          // }
         ]
       },
       {
@@ -89,10 +89,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1ifhon9i5H1vNTvLsewdNchPtRDXsTHFfksoGlr7HAhI"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1kNQ_4Iay-EIaBSRJe2exgNnN71aTBBGyFYqaRCSIspE"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1kNQ_4Iay-EIaBSRJe2exgNnN71aTBBGyFYqaRCSIspE"
+          // }
         ]
       },
       {
@@ -123,10 +123,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1WN45ea7rZyu8wMaPyRruHwj-cQF0vYLSd437cFaUHZ8"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1Ze-KmJR9JUTT2_VLOjK2_Cpu-gisF1kiaNbT8zfDrsY"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1Ze-KmJR9JUTT2_VLOjK2_Cpu-gisF1kiaNbT8zfDrsY"
+          // }
         ]
       },
       {
@@ -157,10 +157,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1HVqKORxAR7MCFDk5m9jiQpXT1vLZRBDTlVLhrgbNAJg"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1MNCe4mHO81kug4jL1z0LpPnFNPKUdhYpiIheOwyKWr8"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1MNCe4mHO81kug4jL1z0LpPnFNPKUdhYpiIheOwyKWr8"
+          // }
         ]
       },
       {
@@ -191,10 +191,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1BjWnKAHUDlMIf04vOQJ8aeolefqgCsYaJ4wwvPa8Sl0"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/180XwOYONU6OHj2H49-GSr6-hnX2Qt3k-gYKj5dkRKxw"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/180XwOYONU6OHj2H49-GSr6-hnX2Qt3k-gYKj5dkRKxw"
+          // }
         ]
       },
       {
@@ -225,10 +225,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1wqR5W-j_a1nRbwVCAPIAg4--s61B1b5tLe5LduEpgPM"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/11uTASfLckue8lQ48Zcjnw6BYIjY_DIowp8vAu5-NWEs"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/11uTASfLckue8lQ48Zcjnw6BYIjY_DIowp8vAu5-NWEs"
+          // }
         ]
       },
       {
@@ -259,10 +259,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1tzbk9hHUX4acP-uLXj8w2UWxQ_gljcob6Y_cxyfiVnM"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1ytiwkBoCVDvuVXw35FZ0_0HGXHZ2qyPw8M15xq2g2RU"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1ytiwkBoCVDvuVXw35FZ0_0HGXHZ2qyPw8M15xq2g2RU"
+          // }
         ]
       },
       {
@@ -293,10 +293,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1gRjGMbE8ttWYCu1IZkJBJnoBEljsOxb_h0MbDCsv9Yc"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1stwfkmVrk8bC2gXyiAlfg0Eo1YMFoUH-VSX33Qc0HII"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1stwfkmVrk8bC2gXyiAlfg0Eo1YMFoUH-VSX33Qc0HII"
+          // }
         ]
       },
       {
@@ -327,10 +327,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1eXSwuVa8l4dTHv-mguaaQlXqxvE1to34t3OqJrTQ040"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1m2Rv57TfCjmm9Le4VcoCkPpU3ymWd8svOqEWnKyLUVQ"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1m2Rv57TfCjmm9Le4VcoCkPpU3ymWd8svOqEWnKyLUVQ"
+          // }
         ]
       },
       {
@@ -361,10 +361,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1agnghzJJCjnhHC5o8TFTv8UDAKsKFGMhJtM25OXhuEQ"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1jEwTOQTCZkd5iemDpMHox4xaoBrlWiNUxhgELaKnfhs"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1jEwTOQTCZkd5iemDpMHox4xaoBrlWiNUxhgELaKnfhs"
+          // }
         ]
       },
       {
@@ -395,10 +395,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1U_pVVh6STx08MrgmuZfPiUKg47_vojpWaDI-CVZXcp0"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1iOPg04wa6_tvdF_bcVMD9VmzVx3GiUW77z_fvu5HrxU"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1iOPg04wa6_tvdF_bcVMD9VmzVx3GiUW77z_fvu5HrxU"
+          // }
         ]
       },
       {
@@ -429,10 +429,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1yKidSiKqYm6tiTz98LyRCX8PSY2Ykw1G9bzCE-3ma8s"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1PuL7tPdnZuw-blgQjTbpIb6ArHzIC9SQfVV7Qfd8hZQ"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1PuL7tPdnZuw-blgQjTbpIb6ArHzIC9SQfVV7Qfd8hZQ"
+          // }
         ]
       },
       {
@@ -463,10 +463,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1jXx-wu3pAnGDCqBzkZ6kJcE45KpX1C3nWHLqaErl0MA"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1EFCnBHLUBDB2gI3ntpHSmczn-jUTCsLOcBb52EQ0o-w"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1EFCnBHLUBDB2gI3ntpHSmczn-jUTCsLOcBb52EQ0o-w"
+          // }
         ]
       },
       {
@@ -497,10 +497,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/13ZZkJxOYeO-C8TLi1YaMC6hKuAxFXRqcM4qXndB4bYY"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1OrSEPelt_qy1tHpjwqXSSjfMpX8A7yuQzkpET-QN3SI"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1OrSEPelt_qy1tHpjwqXSSjfMpX8A7yuQzkpET-QN3SI"
+          // }
         ]
       },
       {
@@ -531,10 +531,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/u/8/d/1xCuhTTioNWCKjlGyjE-GhU9GUA5RvMSWOOl4Ld61BBM"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1a3kUrQS2vsKE28lRBUwruzTTNiXhIdkL3-X40Wv8Uzw"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1a3kUrQS2vsKE28lRBUwruzTTNiXhIdkL3-X40Wv8Uzw"
+          // }
         ]
       },
       {
@@ -565,10 +565,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1US0eVvinosmK-8-N1KaRG443j0hUihiY-_wV5Ru_2B4"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1ohnkYfLfta83J9TN69aialsRNCKAux6YW2a0RsrcPrI"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1ohnkYfLfta83J9TN69aialsRNCKAux6YW2a0RsrcPrI"
+          // }
         ]
       },
       {
@@ -599,10 +599,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1VS5-sWnOHhRLXjeGswUuzBll0clEEHmIO__DIUjQGjA"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1pZT-WNGgwKIqPfLsSqRztIiYfwBu7hCbRxwIxg7i28s"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1pZT-WNGgwKIqPfLsSqRztIiYfwBu7hCbRxwIxg7i28s"
+          // }
         ]
       },
       {
@@ -633,10 +633,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1VSj1uHJJ_O2kZ_Y4AQcw_Wh6EYxqGWUyM5lIQ19EJjk"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/19YiL2EzU9Scz_-iHByRwWpJSItYHLJmAHiZiUQWs07Q"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/19YiL2EzU9Scz_-iHByRwWpJSItYHLJmAHiZiUQWs07Q"
+          // }
         ]
       },
       {
@@ -667,10 +667,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1YmUAlLWGAOlMeMMNxWT7XcMILldFdcZpIpyw7ZJW4Hs"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1ruMll70UeEqiV7MNh3_Leq3XnfaqDm61rUCbpLbnzTw"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1ruMll70UeEqiV7MNh3_Leq3XnfaqDm61rUCbpLbnzTw"
+          // }
         ]
       },
       {
@@ -701,10 +701,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1bSrkf7jd2iU28JtO_-DwoeqFbaVwKfsev3d9LrQ3TV4"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1Pf83GQ6CD0wzPYCRqU7sEzegQfcw9vkpc_uAEdEp5Iw"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1Pf83GQ6CD0wzPYCRqU7sEzegQfcw9vkpc_uAEdEp5Iw"
+          // }
         ]
       },
       {
@@ -735,10 +735,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1RV4skRiM_Tor3MYnmVPB4TTwWMs3B_ynbjC06KUBOw4"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1RBvGwN-q65S3KyfVaX-uu4WtSIuL5Qxg0LlDPhdSa0s"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1RBvGwN-q65S3KyfVaX-uu4WtSIuL5Qxg0LlDPhdSa0s"
+          // }
         ]
       },
       {
@@ -769,10 +769,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1aqzDgA936KchUM5YaZy4cydgP6wcuVzfbihhulac8uI"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1ZvO694VvaUUv8uX8OPwUlRC0XQu6-DT96l6117QHgl4"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1ZvO694VvaUUv8uX8OPwUlRC0XQu6-DT96l6117QHgl4"
+          // }
         ]
       },
       {
@@ -803,10 +803,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1enl0Rt94wjbZ2JLQ2rVN7IKxw0uUCanqdzUc8P2P2n8"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/11S-taWpm8s5_P-fCd6UxyFLuBFXx_fjOj_e3Lh6SMX4"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/11S-taWpm8s5_P-fCd6UxyFLuBFXx_fjOj_e3Lh6SMX4"
+          // }
         ]
       },
       {
@@ -837,10 +837,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1ddhyTrTH3D5F5MJgfFELy31GlSAZCu5xGmHew0kx900"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1U1oSSyFuehIZjTNhSRfIBb_2sd9LqXhyo6iEE9SaysU"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1U1oSSyFuehIZjTNhSRfIBb_2sd9LqXhyo6iEE9SaysU"
+          // }
         ]
       },
       {
@@ -871,10 +871,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/12XOP8Hr9MNxoGOtrYlN_TG_uhMxH0k4pdqGA8dHt0sg"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1w-cHvjs6iqB9dtJSTPOkVFQ5dLylNidiOV9vvqLnvxI"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1w-cHvjs6iqB9dtJSTPOkVFQ5dLylNidiOV9vvqLnvxI"
+          // }
         ]
       },
       {
@@ -905,10 +905,10 @@ const setores = [
             nome: "Controle de Membros",
             link: "https://docs.google.com/spreadsheets/d/1JhIMfKcOZr3vfG6FhMMbmGzl3n-S9e68P14NOWwytH4"
           },
-          {
-            nome: "Cartões de Obreiros",
-            link: "https://docs.google.com/spreadsheets/d/1DUBxt2wjpDnuO_928FhBTyl_OHzhK0SCoaSJe0ZpSjo"
-          }
+          // {
+          //   nome: "Cartões de Obreiros",
+          //   link: "https://docs.google.com/spreadsheets/d/1DUBxt2wjpDnuO_928FhBTyl_OHzhK0SCoaSJe0ZpSjo"
+          // }
         ]
       },
       {
